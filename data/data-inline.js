@@ -59,8 +59,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc3s12000f78kp5f6976_R_960_660_R5_D.jpg",
       "interior_url": "https://ak-d.tripcdn.com/images/200c1c000001c7tch1A2A_R_339_206_R5_D.jpg",
       "source": "Trip.com property gallery",
-      "exterior_local": "assets/hotels/jw-marriott-chengdu/exterior.svg",
-      "interior_local": "assets/hotels/jw-marriott-chengdu/interior.svg"
+      "exterior_local": "assets/hotels/jw-marriott-chengdu/exterior.jpg",
+      "interior_local": "assets/hotels/jw-marriott-chengdu/interior.jpg"
     },
     "links": {
       "official": "https://www.marriott.com/en-us/hotels/ctujw-jw-marriott-hotel-chengdu/overview/",
@@ -128,8 +128,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc6p12000g9zvp4uF640_R_960_660_R5_D.jpg",
       "interior_url": "https://ak-d.tripcdn.com/images/0204w120009gxgnib8A3F_R_339_206_R5_D.jpg",
       "source": "Trip.com property gallery",
-      "exterior_local": "assets/hotels/grand-hyatt-chengdu/exterior.svg",
-      "interior_local": "assets/hotels/grand-hyatt-chengdu/interior.svg"
+      "exterior_local": "assets/hotels/grand-hyatt-chengdu/exterior.jpg",
+      "interior_local": "assets/hotels/grand-hyatt-chengdu/interior.jpg"
     },
     "links": {
       "official": "https://www.hyatt.com/grand-hyatt/en-US/ctugh-grand-hyatt-chengdu",
@@ -197,8 +197,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc1e12000hek60deC8FF_R_960_660_R5_D.jpg",
       "interior_url": "https://ak-d.tripcdn.com/images/1mc4x12000dd2v3mvE710_R_339_206_R5_D.jpg",
       "source": "Trip.com property gallery",
-      "exterior_local": "assets/hotels/niccolo-chengdu/exterior.svg",
-      "interior_local": "assets/hotels/niccolo-chengdu/interior.svg"
+      "exterior_local": "assets/hotels/niccolo-chengdu/exterior.jpg",
+      "interior_local": "assets/hotels/niccolo-chengdu/interior.jpg"
     },
     "links": {
       "official": "https://www.niccolohotels.com/en/hotels/chengdu",
@@ -268,8 +268,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_fallback_url": "https://images.trvl-media.com/lodging/11000000/10920000/10912100/10912041/8199a941.jpg?h=800&impolicy=fcrop&quality=medium&w=1200",
       "interior_fallback_url": "https://images.trvl-media.com/lodging/11000000/10920000/10912100/10912041/e81d753c.jpg?h=800&impolicy=fcrop&quality=medium&w=1200",
       "source": "Hotels.com photo gallery",
-      "exterior_local": "assets/hotels/temple-house-chengdu/exterior.svg",
-      "interior_local": "assets/hotels/temple-house-chengdu/interior.svg"
+      "exterior_local": "assets/hotels/temple-house-chengdu/exterior.jpg",
+      "interior_local": "assets/hotels/temple-house-chengdu/interior.jpg"
     },
     "links": {
       "official": "https://www.thehousecollective.com/en/the-temple-house/",
@@ -337,8 +337,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc5812000e40nsag1403_R_960_660_R5_D.jpg",
       "interior_url": "https://ak-d.tripcdn.com/images/1mc6f12000ckdegxb1476_R_339_206_R5_D.jpg",
       "source": "Trip.com property gallery",
-      "exterior_local": "assets/hotels/langbo-chengdu/exterior.svg",
-      "interior_local": "assets/hotels/langbo-chengdu/interior.svg"
+      "exterior_local": "assets/hotels/langbo-chengdu/exterior.jpg",
+      "interior_local": "assets/hotels/langbo-chengdu/interior.jpg"
     },
     "links": {
       "official": "https://www.hyatt.com/en-US/hotel/china/the-langbo-chengdu/ctuub",
@@ -406,8 +406,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc0f12000i0ch4gn6289_R_960_660_R5_D.jpg",
       "interior_url": "https://ak-d.tripcdn.com/images/1mc0n12000if2vpfv7B67_R_339_206_R5_D.jpg",
       "source": "Trip.com property gallery",
-      "exterior_local": "assets/hotels/ritz-carlton-chengdu/exterior.svg",
-      "interior_local": "assets/hotels/ritz-carlton-chengdu/interior.svg"
+      "exterior_local": "assets/hotels/ritz-carlton-chengdu/exterior.jpg",
+      "interior_local": "assets/hotels/ritz-carlton-chengdu/interior.jpg"
     },
     "links": {
       "official": "https://www.ritzcarlton.com/en/hotels/china/chengdu/overview/",
@@ -475,8 +475,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_url": "https://ak-d.tripcdn.com/images/0206o120008dtkvr6B267_R_960_660_R5_D.jpg",
       "interior_url": "https://ak-d.tripcdn.com/images/1mc7212000i03csf4DBEA_R_339_206_R5_D.jpg",
       "source": "Trip.com property gallery",
-      "exterior_local": "assets/hotels/st-regis-chengdu/exterior.svg",
-      "interior_local": "assets/hotels/st-regis-chengdu/interior.svg"
+      "exterior_local": "assets/hotels/st-regis-chengdu/exterior.jpg",
+      "interior_local": "assets/hotels/st-regis-chengdu/interior.jpg"
     },
     "links": {
       "official": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/overview/",
@@ -544,8 +544,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_url": "https://images.trvl-media.com/lodging/9000000/8200000/8190900/8190896/4ca2d865.jpg?impolicy=resizecrop&ra=fit&rw=297",
       "interior_url": "https://images.trvl-media.com/lodging/9000000/8200000/8190900/8190896/52ef243b.jpg?h=800&impolicy=fcrop&quality=medium&w=1200",
       "source": "Hotels.com photo gallery",
-      "exterior_local": "assets/hotels/westin-chongqing-liberation-square/exterior.svg",
-      "interior_local": "assets/hotels/westin-chongqing-liberation-square/interior.svg"
+      "exterior_local": "assets/hotels/westin-chongqing-liberation-square/exterior.jpg",
+      "interior_local": "assets/hotels/westin-chongqing-liberation-square/interior.jpg"
     },
     "links": {
       "official": "https://www.marriott.com/en-us/hotels/ckgwi-the-westin-chongqing-liberation-square/overview/",
@@ -613,8 +613,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_url": "https://images.trvl-media.com/lodging/2000000/1640000/1637000/1636908/c068528c.jpg?impolicy=resizecrop&ra=fit&rw=598",
       "interior_url": "https://images.trvl-media.com/lodging/2000000/1640000/1637000/1636908/ff67d299.jpg?h=800&impolicy=fcrop&quality=medium&w=1200",
       "source": "Hotels.com photo gallery",
-      "exterior_local": "assets/hotels/jw-marriott-chongqing/exterior.svg",
-      "interior_local": "assets/hotels/jw-marriott-chongqing/interior.svg"
+      "exterior_local": "assets/hotels/jw-marriott-chongqing/exterior.jpg",
+      "interior_local": "assets/hotels/jw-marriott-chongqing/interior.jpg"
     },
     "links": {
       "official": "https://www.marriott.com/en-us/hotels/ckgjw-jw-marriott-hotel-chongqing/overview/",
@@ -682,8 +682,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_url": "https://images.trvl-media.com/lodging/1000000/120000/114900/114895/2ced0bed.jpg?impolicy=resizecrop&ra=fit&rw=297",
       "interior_url": "https://images.trvl-media.com/lodging/1000000/120000/114900/114895/dc3176e8.jpg?h=800&impolicy=fcrop&quality=medium&w=1200",
       "source": "Hotels.com photo gallery",
-      "exterior_local": "assets/hotels/hyatt-regency-metropolitan-chongqing/exterior.svg",
-      "interior_local": "assets/hotels/hyatt-regency-metropolitan-chongqing/interior.svg"
+      "exterior_local": "assets/hotels/hyatt-regency-metropolitan-chongqing/exterior.jpg",
+      "interior_local": "assets/hotels/hyatt-regency-metropolitan-chongqing/interior.jpg"
     },
     "links": {
       "official": "https://www.hyatt.com/hyatt-regency/en-US/ckgro-hyatt-regency-metropolitan-chongqing",
@@ -753,8 +753,8 @@ window.__CHENGDU_HOTELS__ = [
       "exterior_fallback_url": "https://images.trvl-media.com/lodging/23000000/22400000/22397700/22397671/a95e422e.jpg?impolicy=resizecrop&ra=fit&rw=297",
       "interior_fallback_url": "https://images.trvl-media.com/lodging/23000000/22400000/22397700/22397671/8b741af7.jpg?impolicy=resizecrop&ra=fit&rw=297",
       "source": "Hotels.com photo gallery",
-      "exterior_local": "assets/hotels/niccolo-chongqing/exterior.svg",
-      "interior_local": "assets/hotels/niccolo-chongqing/interior.svg"
+      "exterior_local": "assets/hotels/niccolo-chongqing/exterior.jpg",
+      "interior_local": "assets/hotels/niccolo-chongqing/interior.jpg"
     },
     "links": {
       "official": "https://www.niccolohotels.com/en/niccolo-chongqing",
