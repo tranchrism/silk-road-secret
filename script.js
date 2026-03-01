@@ -9,33 +9,31 @@ const state = {
   chongqing24h: []
 };
 
-function getBaseDir() {
-  const path = window.location.pathname;
-  const lastSegment = path.split("/").pop() || "";
+const INLINE_PLACEHOLDER_SVG = `data:image/svg+xml;utf8,${encodeURIComponent(`
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Image unavailable">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7a1d27"/>
+      <stop offset="100%" stop-color="#1f4d43"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <text x="600" y="380" text-anchor="middle" fill="#f7e0a4" font-family="Georgia, serif" font-size="64">Hotel Image Unavailable</text>
+  <text x="600" y="450" text-anchor="middle" fill="#f7e0a4" font-family="Arial, sans-serif" font-size="36">Fallback placeholder loaded</text>
+</svg>
+`)}`;
 
-  // Handle project pages opened without trailing slash, e.g. /repo-name
-  if (!path.endsWith("/") && !lastSegment.includes(".")) {
-    return `${path}/`;
-  }
-
-  if (path.endsWith("/")) {
-    return path;
-  }
-
-  return path.slice(0, path.lastIndexOf("/") + 1);
-}
-
-function resolveAssetPath(path) {
+function normalizeSource(path) {
   if (!path) {
     return "";
   }
-
-  if (/^https?:\/\//i.test(path)) {
+  if (/^https?:\/\//i.test(path) || path.startsWith("data:")) {
     return path;
   }
-
-  const baseDir = getBaseDir();
-  return new URL(path, `${window.location.origin}${baseDir}`).href;
+  if (path.startsWith("./") || path.startsWith("../") || path.startsWith("/")) {
+    return path;
+  }
+  return `./${path}`;
 }
 
 function escapeHtml(text) {
@@ -94,10 +92,10 @@ function roomRateTableMarkup(roomRates) {
 }
 
 function imageMarkup(hotel, kind, label) {
-  const local = resolveAssetPath(kind === "exterior" ? hotel.images.exterior_local : hotel.images.interior_local);
-  const primary = resolveAssetPath(kind === "exterior" ? hotel.images.exterior_url : hotel.images.interior_url);
-  const fallback = resolveAssetPath(kind === "exterior" ? hotel.images.exterior_fallback_url : hotel.images.interior_fallback_url);
-  const placeholder = resolveAssetPath("assets/placeholders/image-unavailable.svg");
+  const local = normalizeSource(kind === "exterior" ? hotel.images.exterior_local : hotel.images.interior_local);
+  const primary = normalizeSource(kind === "exterior" ? hotel.images.exterior_url : hotel.images.interior_url);
+  const fallback = normalizeSource(kind === "exterior" ? hotel.images.exterior_fallback_url : hotel.images.interior_fallback_url);
+  const placeholder = INLINE_PLACEHOLDER_SVG;
   const firstSource = local || primary || fallback || placeholder;
 
   return `
@@ -263,15 +261,18 @@ function bindImageFallbacks(root = document) {
         return;
       }
 
-      const figure = img.closest("figure");
-      if (!figure) {
+      const placeholderSrc = img.dataset.placeholderSrc || INLINE_PLACEHOLDER_SVG;
+      if (img.src !== placeholderSrc) {
+        img.src = placeholderSrc;
         return;
       }
 
-      img.hidden = true;
-      const placeholder = figure.querySelector(".img-placeholder");
-      if (placeholder) {
-        placeholder.hidden = false;
+      const figure = img.closest("figure");
+      if (figure) {
+        const placeholder = figure.querySelector(".img-placeholder");
+        if (placeholder) {
+          placeholder.hidden = false;
+        }
       }
     });
   });
