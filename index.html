@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260301g" />
+    <link rel="stylesheet" href="styles.css?v=20260301h" />
   </head>
   <body>
     <header class="hero" id="top">
@@ -20,7 +20,7 @@
           <a href="#china-tips">China Tips</a>
           <a href="#shopping">Shopping</a>
           <a href="#transit">Transit</a>
-          <a href="#silk-snake">Silk Snake</a>
+          <a href="#silk-trail">Silk Road Trail</a>
           <a href="#data-trust">Data Trust</a>
           <button id="printBtn" class="print-btn" type="button">Print / Save PDF</button>
         </div>
@@ -38,39 +38,44 @@
         </div>
 
         <figure class="hero-mascot-frame">
-          <img src="assets/mascot/silk-road-duo.svg?v=20260301g" alt="Comical Silk Road duo mascot featuring two travelers in Tang-style outfits and lightsabers" />
+          <img src="assets/mascot/silk-road-duo.svg?v=20260301h" alt="Comical Silk Road duo mascot featuring two travelers in Tang-style outfits and lightsabers" />
           <figcaption>Silk Road Duo: plaid mullet strategist + bald hotpot navigator.</figcaption>
         </figure>
       </div>
     </header>
 
     <main>
-      <section id="silk-snake" class="section silk-snake">
+      <section id="silk-trail" class="section silk-trail">
         <div class="section-head">
-          <h2>Silk Snake Mini-Game</h2>
-          <p>Play with keyboard (arrow keys/WASD) or touch controls on mobile.</p>
+          <h2>Silk Road Trail Mini-Game</h2>
+          <p>Oregon Trail-style resource game: choose daily actions, survive events, and reach Chongqing before time runs out.</p>
         </div>
 
-        <div class="snake-wrap">
-          <canvas id="snakeCanvas" width="360" height="360" aria-label="Silk Snake game board"></canvas>
-          <div class="snake-ui">
-            <div class="snake-score">
-              <span>Score: <strong id="snakeScore">0</strong></span>
-              <span>High Score: <strong id="snakeHighScore">0</strong></span>
-            </div>
-            <div class="snake-buttons">
-              <button id="snakeStartBtn" type="button">Start</button>
-              <button id="snakePauseBtn" type="button">Pause</button>
-              <button id="snakeRestartBtn" type="button">Restart</button>
-            </div>
-            <div class="dpad" aria-label="Touch controls">
-              <button class="dpad-btn" data-dir="up" aria-label="Move up">▲</button>
-              <div class="dpad-mid">
-                <button class="dpad-btn" data-dir="left" aria-label="Move left">◀</button>
-                <button class="dpad-btn" data-dir="right" aria-label="Move right">▶</button>
-              </div>
-              <button class="dpad-btn" data-dir="down" aria-label="Move down">▼</button>
-            </div>
+        <div class="trail-wrap">
+          <div class="trail-stats">
+            <div class="trail-stat"><span>Day</span><strong id="trailDay">1</strong></div>
+            <div class="trail-stat"><span>Distance</span><strong id="trailDistance">0 km</strong></div>
+            <div class="trail-stat"><span>Supplies</span><strong id="trailSupplies">100</strong></div>
+            <div class="trail-stat"><span>Stamina</span><strong id="trailStamina">100</strong></div>
+            <div class="trail-stat"><span>Morale</span><strong id="trailMorale">85</strong></div>
+            <div class="trail-stat"><span>Cash</span><strong id="trailCash">¥420</strong></div>
+            <div class="trail-stat"><span>Best Run</span><strong id="trailBest">0 km</strong></div>
+          </div>
+
+          <div class="trail-actions">
+            <button id="trailFastBtn" type="button">Push Hard</button>
+            <button id="trailSteadyBtn" type="button">Travel Steady</button>
+            <button id="trailRestBtn" type="button">Rest and Recover</button>
+            <button id="trailForageBtn" type="button">Scout Cheap Eats</button>
+            <button id="trailTradeBtn" type="button">Resupply at Market</button>
+            <button id="trailRestartBtn" type="button">Restart Expedition</button>
+          </div>
+
+          <p id="trailStatus" class="trail-status">Reach 1200 km by Day 14. If supplies, stamina, or morale hit 0, the expedition fails.</p>
+
+          <div class="trail-log-wrap">
+            <h3>Expedition Log</h3>
+            <ul id="trailLog" class="trail-log"></ul>
           </div>
         </div>
       </section>
@@ -249,7 +254,7 @@
       <a href="#top">Back to top</a>
     </footer>
 
-    <script src="data/data-inline.js?v=20260301g"></script>
-    <script src="script.js?v=20260301g"></script>
+    <script src="data/data-inline.js?v=20260301h"></script>
+    <script src="script.js?v=20260301h"></script>
   </body>
 </html>

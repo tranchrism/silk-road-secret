@@ -600,10 +600,10 @@ tbody td {
   font-size: 0.81rem;
 }
 
-.snake-wrap {
+.trail-wrap {
   display: grid;
   gap: 1rem;
-  grid-template-columns: minmax(280px, 360px) 1fr;
+  grid-template-columns: 1fr;
   align-items: start;
   border: 1px solid #cca562;
   border-radius: 14px;
@@ -612,35 +612,39 @@ tbody td {
   box-shadow: 0 10px 20px rgba(27, 19, 16, 0.12);
 }
 
-#snakeCanvas {
-  width: 100%;
-  max-width: 360px;
-  aspect-ratio: 1 / 1;
-  border: 2px solid #7f2d1f;
-  border-radius: 12px;
-  background: repeating-linear-gradient(0deg, #f0d8a5 0, #f0d8a5 18px, #edd09a 18px, #edd09a 36px);
-}
-
-.snake-ui {
+.trail-stats {
   display: grid;
-  gap: 0.9rem;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 0.55rem;
 }
 
-.snake-score {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  font-weight: 700;
+.trail-stat {
+  border: 1px solid #cfa668;
+  border-radius: 10px;
+  background: #fff8e7;
+  padding: 0.45rem 0.55rem;
+  display: grid;
+  gap: 0.15rem;
 }
 
-.snake-buttons {
+.trail-stat span {
+  font-size: 0.78rem;
+  color: #644a34;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.trail-stat strong {
+  font-size: 1.02rem;
+}
+
+.trail-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;
 }
 
-.snake-buttons button,
-.dpad-btn {
+.trail-actions button {
   border: 1px solid #8f5420;
   border-radius: 10px;
   background: linear-gradient(180deg, #fbe6b7, #f0c46e);
@@ -650,16 +654,49 @@ tbody td {
   cursor: pointer;
 }
 
-.dpad {
-  width: min(240px, 100%);
-  display: grid;
-  gap: 0.35rem;
+.trail-status {
+  margin: 0;
+  border-left: 4px solid #d89f42;
+  background: rgba(235, 185, 79, 0.14);
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  font-weight: 500;
 }
 
-.dpad-mid {
-  display: grid;
-  gap: 0.35rem;
-  grid-template-columns: 1fr 1fr;
+.trail-log-wrap {
+  border: 1px solid #d2ac6f;
+  border-radius: 11px;
+  background: #fff9eb;
+  padding: 0.7rem;
+}
+
+.trail-log-wrap h3 {
+  margin-bottom: 0.45rem;
+}
+
+.trail-log {
+  margin: 0;
+  padding-left: 1.1rem;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.trail-log li {
+  margin-bottom: 0.3rem;
+}
+
+.trail-status.success {
+  border-left-color: #1d7a55;
+  background: rgba(29, 122, 85, 0.14);
+}
+
+.trail-status.fail {
+  border-left-color: #9f1421;
+  background: rgba(159, 20, 33, 0.14);
+}
+
+.trail-status.running {
+  border-left-color: #d89f42;
 }
 
 .data-trust .trust-grid {
@@ -707,9 +744,13 @@ tbody td {
 
   .hotel-grid,
   .list-pair,
-  .snake-wrap,
+  .trail-wrap,
   .data-trust .trust-grid {
     grid-template-columns: 1fr;
+  }
+
+  .trail-stats {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
 
   main {
@@ -730,7 +771,7 @@ tbody td {
   .tabs,
   .print-btn,
   .site-footer,
-  #silk-snake {
+  #silk-trail {
     display: none !important;
   }
 

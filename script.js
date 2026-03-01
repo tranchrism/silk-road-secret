@@ -1,5 +1,5 @@
 const districtOrder = ["Jinjiang", "Wuhou", "Chongqing Overnight"];
-const DATA_VERSION = "20260301f";
+const DATA_VERSION = "20260301h";
 
 const state = {
   activeDistrict: "Jinjiang",
@@ -578,226 +578,271 @@ function setupPrint() {
   printBtn.addEventListener("click", () => window.print());
 }
 
-function setupSnake() {
-  const canvas = document.querySelector("#snakeCanvas");
-  const scoreEl = document.querySelector("#snakeScore");
-  const highScoreEl = document.querySelector("#snakeHighScore");
-  const startBtn = document.querySelector("#snakeStartBtn");
-  const pauseBtn = document.querySelector("#snakePauseBtn");
-  const restartBtn = document.querySelector("#snakeRestartBtn");
+function setupTrailGame() {
+  const dayEl = document.querySelector("#trailDay");
+  const distanceEl = document.querySelector("#trailDistance");
+  const suppliesEl = document.querySelector("#trailSupplies");
+  const staminaEl = document.querySelector("#trailStamina");
+  const moraleEl = document.querySelector("#trailMorale");
+  const cashEl = document.querySelector("#trailCash");
+  const bestEl = document.querySelector("#trailBest");
+  const statusEl = document.querySelector("#trailStatus");
+  const logEl = document.querySelector("#trailLog");
+  const fastBtn = document.querySelector("#trailFastBtn");
+  const steadyBtn = document.querySelector("#trailSteadyBtn");
+  const restBtn = document.querySelector("#trailRestBtn");
+  const forageBtn = document.querySelector("#trailForageBtn");
+  const tradeBtn = document.querySelector("#trailTradeBtn");
+  const restartBtn = document.querySelector("#trailRestartBtn");
 
-  if (!canvas || !scoreEl || !highScoreEl || !startBtn || !pauseBtn || !restartBtn) {
+  if (
+    !dayEl ||
+    !distanceEl ||
+    !suppliesEl ||
+    !staminaEl ||
+    !moraleEl ||
+    !cashEl ||
+    !bestEl ||
+    !statusEl ||
+    !logEl ||
+    !fastBtn ||
+    !steadyBtn ||
+    !restBtn ||
+    !forageBtn ||
+    !tradeBtn ||
+    !restartBtn
+  ) {
     return;
   }
 
-  const ctx = canvas.getContext("2d");
-  const size = 18;
-  const cell = canvas.width / size;
+  const maxDays = 14;
+  const goalDistance = 1200;
+  let bestDistance = Number(localStorage.getItem("silk-road-trail-best-distance") || "0");
 
-  const snake = {
-    body: [
-      { x: 8, y: 9 },
-      { x: 7, y: 9 },
-      { x: 6, y: 9 }
-    ],
-    dir: "right",
-    nextDir: "right"
+  const game = {
+    day: 1,
+    distance: 0,
+    supplies: 100,
+    stamina: 100,
+    morale: 85,
+    cash: 420,
+    ended: false,
+    logs: ["Expedition begins: Chengdu to Chongqing overland challenge accepted."]
   };
 
-  let food = { x: 12, y: 8 };
-  let running = false;
-  let paused = false;
-  let score = 0;
-  let tickTimer = null;
-  let highScore = Number(localStorage.getItem("silk-snake-high-score") || "0");
+  const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+  const randInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-  highScoreEl.textContent = String(highScore);
-
-  function directionFromKey(key) {
-    if (["ArrowUp", "w", "W"].includes(key)) return "up";
-    if (["ArrowDown", "s", "S"].includes(key)) return "down";
-    if (["ArrowLeft", "a", "A"].includes(key)) return "left";
-    if (["ArrowRight", "d", "D"].includes(key)) return "right";
-    return null;
+  function addLog(entry) {
+    game.logs.unshift(entry);
+    game.logs = game.logs.slice(0, 12);
   }
 
-  function isOpposite(a, b) {
-    return (
-      (a === "up" && b === "down") ||
-      (a === "down" && b === "up") ||
-      (a === "left" && b === "right") ||
-      (a === "right" && b === "left")
-    );
+  function setStatus(message, cls = "running") {
+    statusEl.textContent = message;
+    statusEl.classList.remove("running", "success", "fail");
+    statusEl.classList.add(cls);
   }
 
-  function setDirection(next) {
-    if (!next || isOpposite(snake.dir, next)) {
-      return;
-    }
-    snake.nextDir = next;
+  function render() {
+    dayEl.textContent = String(game.day);
+    distanceEl.textContent = `${game.distance} km`;
+    suppliesEl.textContent = String(game.supplies);
+    staminaEl.textContent = String(game.stamina);
+    moraleEl.textContent = String(game.morale);
+    cashEl.textContent = `¥${game.cash}`;
+    bestEl.textContent = `${bestDistance} km`;
+    logEl.innerHTML = game.logs.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   }
 
-  function placeFood() {
-    let x = 0;
-    let y = 0;
-    let conflict = true;
-    while (conflict) {
-      x = Math.floor(Math.random() * size);
-      y = Math.floor(Math.random() * size);
-      conflict = snake.body.some((segment) => segment.x === x && segment.y === y);
-    }
-    food = { x, y };
-  }
-
-  function drawBoard() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    ctx.fillStyle = "rgba(159, 20, 33, 0.10)";
-    for (let i = 0; i < size; i += 1) {
-      for (let j = 0; j < size; j += 1) {
-        if ((i + j) % 2 === 0) {
-          ctx.fillRect(i * cell, j * cell, cell, cell);
-        }
-      }
-    }
-
-    ctx.fillStyle = "#cc1f2a";
-    ctx.beginPath();
-    ctx.arc(food.x * cell + cell / 2, food.y * cell + cell / 2, cell * 0.36, 0, Math.PI * 2);
-    ctx.fill();
-
-    snake.body.forEach((segment, index) => {
-      ctx.fillStyle = index === 0 ? "#1b6f5f" : "#145748";
-      ctx.fillRect(segment.x * cell + 1, segment.y * cell + 1, cell - 2, cell - 2);
+  function setActionButtonsDisabled(disabled) {
+    [fastBtn, steadyBtn, restBtn, forageBtn, tradeBtn].forEach((btn) => {
+      btn.disabled = disabled;
     });
   }
 
-  function stopGame() {
-    running = false;
-    paused = false;
-    if (tickTimer) {
-      window.clearInterval(tickTimer);
-      tickTimer = null;
-    }
-  }
-
-  function gameOver() {
-    stopGame();
-    if (score > highScore) {
-      highScore = score;
-      localStorage.setItem("silk-snake-high-score", String(highScore));
-      highScoreEl.textContent = String(highScore);
-    }
-  }
-
-  function tick() {
-    if (!running || paused) {
+  function applyEvent() {
+    if (Math.random() > 0.42) {
       return;
     }
 
-    snake.dir = snake.nextDir;
-    const head = { ...snake.body[0] };
-
-    if (snake.dir === "up") head.y -= 1;
-    if (snake.dir === "down") head.y += 1;
-    if (snake.dir === "left") head.x -= 1;
-    if (snake.dir === "right") head.x += 1;
-
-    const hitWall = head.x < 0 || head.x >= size || head.y < 0 || head.y >= size;
-    const hitBody = snake.body.some((segment) => segment.x === head.x && segment.y === head.y);
-
-    if (hitWall || hitBody) {
-      gameOver();
-      drawBoard();
-      return;
-    }
-
-    snake.body.unshift(head);
-
-    if (head.x === food.x && head.y === food.y) {
-      score += 1;
-      scoreEl.textContent = String(score);
-      placeFood();
-    } else {
-      snake.body.pop();
-    }
-
-    drawBoard();
-  }
-
-  function reset() {
-    snake.body = [
-      { x: 8, y: 9 },
-      { x: 7, y: 9 },
-      { x: 6, y: 9 }
+    const events = [
+      { text: "Heavy rain slowed your route.", distance: -25, stamina: -8, morale: -4 },
+      { text: "Smooth metro transfers saved time.", distance: 35, stamina: 2, morale: 3 },
+      { text: "Street-food feast boosted morale.", supplies: -6, morale: 10, cash: -30 },
+      { text: "Station queue delay burned energy.", distance: -18, stamina: -6 },
+      { text: "Helpful locals gave directions.", distance: 28, morale: 5 },
+      { text: "Unexpected fare hike hurt budget.", cash: -45, morale: -3 }
     ];
-    snake.dir = "right";
-    snake.nextDir = "right";
-    score = 0;
-    scoreEl.textContent = "0";
-    placeFood();
-    drawBoard();
+    const event = events[randInt(0, events.length - 1)];
+    game.distance += event.distance || 0;
+    game.supplies += event.supplies || 0;
+    game.stamina += event.stamina || 0;
+    game.morale += event.morale || 0;
+    game.cash += event.cash || 0;
+    addLog(`Event: ${event.text}`);
   }
 
-  function start() {
-    if (running) {
-      paused = false;
+  function normalizeStats() {
+    game.distance = Math.max(0, game.distance);
+    game.supplies = clamp(game.supplies, 0, 140);
+    game.stamina = clamp(game.stamina, 0, 120);
+    game.morale = clamp(game.morale, 0, 120);
+    game.cash = Math.max(0, game.cash);
+  }
+
+  function endGame(message, success = false) {
+    game.ended = true;
+    setActionButtonsDisabled(true);
+    setStatus(message, success ? "success" : "fail");
+    if (game.distance > bestDistance) {
+      bestDistance = game.distance;
+      localStorage.setItem("silk-road-trail-best-distance", String(bestDistance));
+    }
+    render();
+  }
+
+  function checkEndConditions() {
+    if (game.distance >= goalDistance) {
+      endGame(`Victory! You reached Chongqing in ${game.day} days with ${game.distance} km covered.`, true);
+      return true;
+    }
+    if (game.supplies <= 0) {
+      endGame("Expedition failed: supplies depleted before reaching Chongqing.");
+      return true;
+    }
+    if (game.stamina <= 0) {
+      endGame("Expedition failed: the team is too exhausted to continue.");
+      return true;
+    }
+    if (game.morale <= 0) {
+      endGame("Expedition failed: morale collapsed and the journey ended.");
+      return true;
+    }
+    if (game.day > maxDays) {
+      endGame("Expedition failed: you ran out of days before reaching Chongqing.");
+      return true;
+    }
+    return false;
+  }
+
+  function nextDay() {
+    game.supplies -= 3;
+    game.day += 1;
+    normalizeStats();
+    if (!checkEndConditions()) {
+      setStatus(`Day ${game.day}: Keep moving. Goal is ${goalDistance} km by Day ${maxDays}.`, "running");
+      render();
+    }
+  }
+
+  function takeAction(action) {
+    if (game.ended) {
       return;
     }
-    running = true;
-    paused = false;
-    if (tickTimer) {
-      window.clearInterval(tickTimer);
+
+    if (action === "fast") {
+      const d = randInt(130, 190);
+      game.distance += d;
+      game.supplies -= 14;
+      game.stamina -= 14;
+      game.morale -= 5;
+      addLog(`Push Hard: +${d} km but heavy fatigue.`);
     }
-    tickTimer = window.setInterval(tick, 120);
+
+    if (action === "steady") {
+      const d = randInt(85, 130);
+      game.distance += d;
+      game.supplies -= 10;
+      game.stamina -= 8;
+      game.morale -= 1;
+      addLog(`Travel Steady: +${d} km with balanced pace.`);
+    }
+
+    if (action === "rest") {
+      const recover = randInt(12, 22);
+      game.distance += randInt(8, 20);
+      game.supplies -= 7;
+      game.stamina += recover;
+      game.morale += 10;
+      addLog(`Rest and Recover: +${recover} stamina and morale reset.`);
+    }
+
+    if (action === "forage") {
+      const found = randInt(-6, 14);
+      const d = randInt(35, 70);
+      game.distance += d;
+      game.supplies += found;
+      game.stamina -= 7;
+      game.morale += 3;
+      addLog(`Scout Cheap Eats: ${found >= 0 ? `+${found}` : found} supplies, +${d} km.`);
+    }
+
+    if (action === "trade") {
+      if (game.cash < 60) {
+        addLog("Market resupply failed: not enough cash.");
+        game.morale -= 4;
+      } else {
+        const purchase = randInt(20, 35);
+        game.cash -= 60;
+        game.supplies += purchase;
+        game.stamina -= 3;
+        game.distance += randInt(20, 45);
+        addLog(`Resupply at Market: +${purchase} supplies for ¥60.`);
+      }
+    }
+
+    applyEvent();
+    normalizeStats();
+    if (!checkEndConditions()) {
+      nextDay();
+    }
   }
 
-  function togglePause() {
-    if (!running) {
-      return;
-    }
-    paused = !paused;
+  function resetGame() {
+    game.day = 1;
+    game.distance = 0;
+    game.supplies = 100;
+    game.stamina = 100;
+    game.morale = 85;
+    game.cash = 420;
+    game.ended = false;
+    game.logs = ["Expedition reset: pick your first move."];
+    setActionButtonsDisabled(false);
+    setStatus(`Day 1: Reach ${goalDistance} km before Day ${maxDays}.`, "running");
+    render();
   }
 
-  startBtn.addEventListener("click", start);
-  pauseBtn.addEventListener("click", togglePause);
-  restartBtn.addEventListener("click", () => {
-    stopGame();
-    reset();
-    start();
-  });
+  fastBtn.addEventListener("click", () => takeAction("fast"));
+  steadyBtn.addEventListener("click", () => takeAction("steady"));
+  restBtn.addEventListener("click", () => takeAction("rest"));
+  forageBtn.addEventListener("click", () => takeAction("forage"));
+  tradeBtn.addEventListener("click", () => takeAction("trade"));
+  restartBtn.addEventListener("click", resetGame);
 
   document.addEventListener("keydown", (event) => {
-    const dir = directionFromKey(event.key);
-    if (!dir) {
+    const key = event.key.toLowerCase();
+    if (game.ended) {
+      if (key === "r") {
+        resetGame();
+      }
       return;
     }
-    event.preventDefault();
-    setDirection(dir);
-    if (!running) {
-      start();
-    }
+    if (key === "1") takeAction("fast");
+    if (key === "2") takeAction("steady");
+    if (key === "3") takeAction("rest");
+    if (key === "4") takeAction("forage");
+    if (key === "5") takeAction("trade");
   });
 
-  document.querySelectorAll(".dpad-btn").forEach((button) => {
-    const handler = (event) => {
-      event.preventDefault();
-      setDirection(button.dataset.dir);
-      if (!running) {
-        start();
-      }
-    };
-    button.addEventListener("click", handler);
-    button.addEventListener("touchstart", handler, { passive: false });
-  });
-
-  reset();
+  setStatus(`Day 1: Reach ${goalDistance} km before Day ${maxDays}.`, "running");
+  render();
 }
 
 (function init() {
   setupTabs();
   setupPrint();
-  setupSnake();
+  setupTrailGame();
   loadData().catch((error) => {
     const districts = document.querySelector("#districtPanels");
     if (districts) {

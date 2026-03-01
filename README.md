@@ -7,7 +7,7 @@ A shareable Chengdu + Chongqing travel microsite with:
 - Temple House pricing normalized to USD display with conversion provenance
 - City-aware restaurant table (Chengdu vs Chongqing)
 - China Tips handbook for US travelers
-- Mobile + keyboard playable Silk Snake mini-game
+- Mobile-friendly Silk Road Trail mini-game (Oregon Trail-style decisions)
 - Local-first image loading for deterministic reliability
 
 ## Project files
