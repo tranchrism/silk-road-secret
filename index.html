@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260301f" />
+    <link rel="stylesheet" href="styles.css?v=20260301g" />
   </head>
   <body>
     <header class="hero" id="top">
@@ -38,13 +38,43 @@
         </div>
 
         <figure class="hero-mascot-frame">
-          <img src="assets/mascot/silk-road-duo.svg" alt="Comical Silk Road duo mascot featuring two travelers in Tang-style outfits" />
+          <img src="assets/mascot/silk-road-duo.svg?v=20260301g" alt="Comical Silk Road duo mascot featuring two travelers in Tang-style outfits and lightsabers" />
           <figcaption>Silk Road Duo: plaid mullet strategist + bald hotpot navigator.</figcaption>
         </figure>
       </div>
     </header>
 
     <main>
+      <section id="silk-snake" class="section silk-snake">
+        <div class="section-head">
+          <h2>Silk Snake Mini-Game</h2>
+          <p>Play with keyboard (arrow keys/WASD) or touch controls on mobile.</p>
+        </div>
+
+        <div class="snake-wrap">
+          <canvas id="snakeCanvas" width="360" height="360" aria-label="Silk Snake game board"></canvas>
+          <div class="snake-ui">
+            <div class="snake-score">
+              <span>Score: <strong id="snakeScore">0</strong></span>
+              <span>High Score: <strong id="snakeHighScore">0</strong></span>
+            </div>
+            <div class="snake-buttons">
+              <button id="snakeStartBtn" type="button">Start</button>
+              <button id="snakePauseBtn" type="button">Pause</button>
+              <button id="snakeRestartBtn" type="button">Restart</button>
+            </div>
+            <div class="dpad" aria-label="Touch controls">
+              <button class="dpad-btn" data-dir="up" aria-label="Move up">▲</button>
+              <div class="dpad-mid">
+                <button class="dpad-btn" data-dir="left" aria-label="Move left">◀</button>
+                <button class="dpad-btn" data-dir="right" aria-label="Move right">▶</button>
+              </div>
+              <button class="dpad-btn" data-dir="down" aria-label="Move down">▼</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="districts" class="section districts">
         <div class="section-head">
           <h2>Hotel Explorer</h2>
@@ -192,36 +222,6 @@
         </div>
       </section>
 
-      <section id="silk-snake" class="section silk-snake">
-        <div class="section-head">
-          <h2>Silk Snake Mini-Game</h2>
-          <p>Play with keyboard (arrow keys/WASD) or touch controls on mobile.</p>
-        </div>
-
-        <div class="snake-wrap">
-          <canvas id="snakeCanvas" width="360" height="360" aria-label="Silk Snake game board"></canvas>
-          <div class="snake-ui">
-            <div class="snake-score">
-              <span>Score: <strong id="snakeScore">0</strong></span>
-              <span>High Score: <strong id="snakeHighScore">0</strong></span>
-            </div>
-            <div class="snake-buttons">
-              <button id="snakeStartBtn" type="button">Start</button>
-              <button id="snakePauseBtn" type="button">Pause</button>
-              <button id="snakeRestartBtn" type="button">Restart</button>
-            </div>
-            <div class="dpad" aria-label="Touch controls">
-              <button class="dpad-btn" data-dir="up" aria-label="Move up">▲</button>
-              <div class="dpad-mid">
-                <button class="dpad-btn" data-dir="left" aria-label="Move left">◀</button>
-                <button class="dpad-btn" data-dir="right" aria-label="Move right">▶</button>
-              </div>
-              <button class="dpad-btn" data-dir="down" aria-label="Move down">▼</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="data-trust" class="section data-trust">
         <div class="section-head">
           <h2>Data Trust and Sourcing</h2>
@@ -249,7 +249,7 @@
       <a href="#top">Back to top</a>
     </footer>
 
-    <script src="data/data-inline.js?v=20260301f"></script>
-    <script src="script.js?v=20260301f"></script>
+    <script src="data/data-inline.js?v=20260301g"></script>
+    <script src="script.js?v=20260301g"></script>
   </body>
 </html>
