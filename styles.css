@@ -332,13 +332,15 @@ main {
   height: 220px;
   border-radius: 10px;
   border: 1px dashed rgba(20, 15, 14, 0.32);
-  background: url("assets/placeholders/image-unavailable.svg") center/cover no-repeat;
-  color: #f4e0af;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(228, 180, 81, 0.45), transparent 32%),
+    linear-gradient(135deg, #712127, #234c43);
+  color: #f7e3b1;
   display: grid;
-  place-items: end center;
+  place-items: center;
   font-size: 0.88rem;
   text-align: center;
-  padding: 0.45rem;
+  padding: 0.8rem;
 }
 
 .images figcaption {

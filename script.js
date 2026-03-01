@@ -9,6 +9,35 @@ const state = {
   chongqing24h: []
 };
 
+function getBaseDir() {
+  const path = window.location.pathname;
+  const lastSegment = path.split("/").pop() || "";
+
+  // Handle project pages opened without trailing slash, e.g. /repo-name
+  if (!path.endsWith("/") && !lastSegment.includes(".")) {
+    return `${path}/`;
+  }
+
+  if (path.endsWith("/")) {
+    return path;
+  }
+
+  return path.slice(0, path.lastIndexOf("/") + 1);
+}
+
+function resolveAssetPath(path) {
+  if (!path) {
+    return "";
+  }
+
+  if (/^https?:\/\//i.test(path)) {
+    return path;
+  }
+
+  const baseDir = getBaseDir();
+  return new URL(path, `${window.location.origin}${baseDir}`).href;
+}
+
 function escapeHtml(text) {
   return String(text)
     .replaceAll("&", "&amp;")
@@ -65,19 +94,21 @@ function roomRateTableMarkup(roomRates) {
 }
 
 function imageMarkup(hotel, kind, label) {
-  const local = kind === "exterior" ? hotel.images.exterior_local : hotel.images.interior_local;
-  const primary = kind === "exterior" ? hotel.images.exterior_url : hotel.images.interior_url;
-  const fallback = kind === "exterior" ? hotel.images.exterior_fallback_url : hotel.images.interior_fallback_url;
-  const sources = [local, primary, fallback].filter(Boolean);
-  const firstSource = sources[0] || "assets/placeholders/image-unavailable.svg";
+  const local = resolveAssetPath(kind === "exterior" ? hotel.images.exterior_local : hotel.images.interior_local);
+  const primary = resolveAssetPath(kind === "exterior" ? hotel.images.exterior_url : hotel.images.interior_url);
+  const fallback = resolveAssetPath(kind === "exterior" ? hotel.images.exterior_fallback_url : hotel.images.interior_fallback_url);
+  const placeholder = resolveAssetPath("assets/placeholders/image-unavailable.svg");
+  const firstSource = local || primary || fallback || placeholder;
 
   return `
     <figure class="hotel-image">
       <img
         class="js-fallback-image"
         src="${escapeHtml(firstSource)}"
-        data-sources="${escapeHtml(JSON.stringify(sources))}"
-        data-placeholder-src="assets/placeholders/image-unavailable.svg"
+        data-local-src="${escapeHtml(local)}"
+        data-primary-src="${escapeHtml(primary)}"
+        data-fallback-src="${escapeHtml(fallback)}"
+        data-placeholder-src="${escapeHtml(placeholder)}"
         alt="${escapeHtml(label)} at ${escapeHtml(hotel.name)}"
         loading="lazy"
       />
@@ -191,14 +222,16 @@ function bindImageFallbacks(root = document) {
     }
     img.dataset.bound = "1";
 
-    let sources = [];
-    try {
-      sources = JSON.parse(img.dataset.sources || "[]");
-    } catch (error) {
-      sources = [];
-    }
-
-    const uniqueSources = Array.from(new Set(sources.filter(Boolean)));
+    const uniqueSources = Array.from(
+      new Set(
+        [
+          img.dataset.localSrc,
+          img.dataset.primarySrc,
+          img.dataset.fallbackSrc,
+          img.dataset.placeholderSrc
+        ].filter(Boolean)
+      )
+    );
     img.dataset.idx = "0";
 
     if (!uniqueSources.length) {
