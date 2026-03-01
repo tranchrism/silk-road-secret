@@ -1,5 +1,5 @@
 const districtOrder = ["Jinjiang", "Wuhou", "Chongqing Overnight"];
-const DATA_VERSION = "20260301d";
+const DATA_VERSION = "20260301e";
 
 const state = {
   activeDistrict: "Jinjiang",
@@ -341,8 +341,28 @@ function renderDistrictPanels() {
 }
 
 function renderRestaurants() {
+  const city = state.activeDistrict === "Chongqing Overnight" ? "Chongqing" : "Chengdu";
+  const heading = document.querySelector("#restaurantsHeading");
+  const subhead = document.querySelector("#restaurantsSubhead");
   const tbody = document.querySelector("#restaurantTable tbody");
-  tbody.innerHTML = state.restaurants
+
+  let restaurants = state.restaurants.filter((r) => (r.city || "").toLowerCase() === city.toLowerCase());
+  if (!restaurants.length) {
+    restaurants = state.restaurants;
+  }
+
+  if (heading) {
+    heading.textContent =
+      city === "Chongqing" ? "Chongqing Restaurant Picks (Overnight-Friendly)" : "Michelin Guide Restaurant Picks";
+  }
+  if (subhead) {
+    subhead.textContent =
+      city === "Chongqing"
+        ? "Curated Chongqing picks near Yuzhong and Jiangbei for one-night stays."
+        : "Includes cuisine, district, Michelin status, and practical budget guidance.";
+  }
+
+  tbody.innerHTML = restaurants
     .map(
       (r) => `
       <tr>
@@ -406,6 +426,7 @@ function setupTabs() {
         btn.setAttribute("aria-selected", String(isActive));
       });
       renderDistrictPanels();
+      renderRestaurants();
     });
   });
 }

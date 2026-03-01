@@ -778,7 +778,8 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "One Star",
     "price_band": "$$$",
     "estimated_per_person": "RMB 200-400",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/ma-s-kitchen"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/ma-s-kitchen",
+    "city": "Chengdu"
   },
   {
     "name": "Nian Feng Restaurant",
@@ -788,7 +789,8 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "Bib Gourmand",
     "price_band": "$$",
     "estimated_per_person": "RMB 90-180",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/nian-feng-restaurant"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/nian-feng-restaurant",
+    "city": "Chengdu"
   },
   {
     "name": "Chengdu Restaurant",
@@ -798,7 +800,8 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "MICHELIN Selected",
     "price_band": "$$$",
     "estimated_per_person": "RMB 180-320",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/chengdu-restaurant"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/chengdu-restaurant",
+    "city": "Chengdu"
   },
   {
     "name": "Nan's Gourmet",
@@ -808,7 +811,8 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "MICHELIN Selected",
     "price_band": "$$$",
     "estimated_per_person": "RMB 180-350",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/nan-s-gourmet"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/nan-s-gourmet",
+    "city": "Chengdu"
   },
   {
     "name": "Yongle Restaurant",
@@ -818,7 +822,8 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "Bib Gourmand",
     "price_band": "$$",
     "estimated_per_person": "RMB 80-160",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/yongle-restaurant"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/yongle-restaurant",
+    "city": "Chengdu"
   },
   {
     "name": "Cuo Xia",
@@ -828,7 +833,8 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "Bib Gourmand",
     "price_band": "$$",
     "estimated_per_person": "RMB 100-200",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/cuo-xia"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/cuo-xia",
+    "city": "Chengdu"
   },
   {
     "name": "Datenbank",
@@ -838,7 +844,8 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "MICHELIN Selected",
     "price_band": "$$$",
     "estimated_per_person": "RMB 220-420",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/datenbank"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/datenbank",
+    "city": "Chengdu"
   },
   {
     "name": "Dumpling & Drinks (Lancao Road)",
@@ -848,7 +855,8 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "Bib Gourmand",
     "price_band": "$$",
     "estimated_per_person": "RMB 70-140",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/dumpling-and-drinks-lancao-road"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/dumpling-and-drinks-lancao-road",
+    "city": "Chengdu"
   },
   {
     "name": "Wanyan",
@@ -858,7 +866,8 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "MICHELIN Selected",
     "price_band": "$$$",
     "estimated_per_person": "RMB 180-300",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/wanyan"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/wanyan",
+    "city": "Chengdu"
   },
   {
     "name": "New Peking Cuisine",
@@ -868,7 +877,96 @@ window.__CHENGDU_RESTAURANTS__ = [
     "michelin_designation": "MICHELIN Selected",
     "price_band": "$$$",
     "estimated_per_person": "RMB 180-320",
-    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/new-peking-cuisine"
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/new-peking-cuisine",
+    "city": "Chengdu"
+  },
+  {
+    "name": "Peijie Chongqing Hotpot",
+    "city": "Chongqing",
+    "cuisine": "Chongqing hotpot",
+    "district": "Yuzhong",
+    "address": "Jiefangbei area, Yuzhong District, Chongqing",
+    "michelin_designation": "Local Favorite",
+    "price_band": "$$",
+    "estimated_per_person": "RMB 80-180",
+    "source_url": "https://maps.google.com/?q=Peijie+Chongqing+Hotpot+Jiefangbei"
+  },
+  {
+    "name": "Qin Yun Lao Hotpot",
+    "city": "Chongqing",
+    "cuisine": "Chongqing hotpot",
+    "district": "Yuzhong",
+    "address": "Jiefangbei area, Yuzhong District, Chongqing",
+    "michelin_designation": "Local Favorite",
+    "price_band": "$$",
+    "estimated_per_person": "RMB 90-200",
+    "source_url": "https://maps.google.com/?q=Qin+Yun+Lao+Hotpot+Chongqing"
+  },
+  {
+    "name": "Lao Ma Chaoshou (Jiefangbei)",
+    "city": "Chongqing",
+    "cuisine": "Sichuan/Chongqing snacks",
+    "district": "Yuzhong",
+    "address": "Jiefangbei area, Yuzhong District, Chongqing",
+    "michelin_designation": "Local Favorite",
+    "price_band": "$",
+    "estimated_per_person": "RMB 25-60",
+    "source_url": "https://maps.google.com/?q=Lao+Ma+Chaoshou+Jiefangbei"
+  },
+  {
+    "name": "Huashi Wanza Mian",
+    "city": "Chongqing",
+    "cuisine": "Chongqing noodles",
+    "district": "Yuzhong",
+    "address": "Xiaoshizi area, Yuzhong District, Chongqing",
+    "michelin_designation": "Local Favorite",
+    "price_band": "$",
+    "estimated_per_person": "RMB 20-45",
+    "source_url": "https://maps.google.com/?q=Huashi+Wanza+Mian+Chongqing"
+  },
+  {
+    "name": "Xiao Tian E Hotpot",
+    "city": "Chongqing",
+    "cuisine": "Chongqing hotpot",
+    "district": "Yuzhong",
+    "address": "Yuzhong District, Chongqing",
+    "michelin_designation": "Local Favorite",
+    "price_band": "$$",
+    "estimated_per_person": "RMB 100-220",
+    "source_url": "https://maps.google.com/?q=Xiao+Tian+E+Hotpot+Chongqing"
+  },
+  {
+    "name": "Bayi Food Street",
+    "city": "Chongqing",
+    "cuisine": "Street food mix",
+    "district": "Yuzhong",
+    "address": "Jiefangbei, Yuzhong District, Chongqing",
+    "michelin_designation": "Local Favorite",
+    "price_band": "$",
+    "estimated_per_person": "RMB 30-90",
+    "source_url": "https://maps.google.com/?q=Bayi+Food+Street+Chongqing"
+  },
+  {
+    "name": "Guanyinqiao Food Street",
+    "city": "Chongqing",
+    "cuisine": "Street food mix",
+    "district": "Jiangbei",
+    "address": "Guanyinqiao area, Jiangbei District, Chongqing",
+    "michelin_designation": "Local Favorite",
+    "price_band": "$",
+    "estimated_per_person": "RMB 35-100",
+    "source_url": "https://maps.google.com/?q=Guanyinqiao+Food+Street+Chongqing"
+  },
+  {
+    "name": "Beicang Cultural District Cafe Row",
+    "city": "Chongqing",
+    "cuisine": "Cafe / light bites",
+    "district": "Jiangbei",
+    "address": "Beicang area, Jiangbei District, Chongqing",
+    "michelin_designation": "Local Favorite",
+    "price_band": "$$",
+    "estimated_per_person": "RMB 50-140",
+    "source_url": "https://maps.google.com/?q=Beicang+Cultural+District+Chongqing"
   }
 ]
 ;
