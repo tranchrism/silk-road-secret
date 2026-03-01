@@ -501,9 +501,10 @@ window.__CHENGDU_HOTELS__ = [
       "Raffles City Chongqing"
     ],
     "nearby_restaurants": [
-      "Qin Yun Lao Hotpot",
-      "Pei Jie Hotpot",
-      "Mountain City trailside noodle shops"
+      "Peijie Chongqing Hotpot (Jiefangbei)",
+      "Qin Yun Lao Hotpot (Jiefangbei)",
+      "Bayi Food Street snack corridor (Jiefangbei)",
+      "Hongyadong riverside grilled fish and skewers"
     ],
     "room_rates_may_11_15_2026": {
       "currency": "USD",
@@ -570,9 +571,10 @@ window.__CHENGDU_HOTELS__ = [
       "Jiefangbei"
     ],
     "nearby_restaurants": [
-      "Qin Ma Hotpot",
-      "Lao Ma Chaoshou",
-      "Bayi Food Street"
+      "Qinma Hotpot (Jiefangbei)",
+      "Lao Ma Chaoshou (Jiefangbei)",
+      "Yangtze River Cableway area noodle shops",
+      "Hongyadong cave-level snack terraces"
     ],
     "room_rates_may_11_15_2026": {
       "currency": "USD",
@@ -639,9 +641,10 @@ window.__CHENGDU_HOTELS__ = [
       "Yangtze River Cableway"
     ],
     "nearby_restaurants": [
-      "Bayi Food Street",
-      "Lianglukou noodle houses",
-      "Traditional Chongqing hotpot chains"
+      "Xiao Tian E Hotpot (Yuzhong)",
+      "Bayi Food Street (Jiefangbei)",
+      "Huashi Wanza Mian (Xiaoshizi area)",
+      "Chaotianmen dockside late-night eats"
     ],
     "room_rates_may_11_15_2026": {
       "currency": "USD",
@@ -708,9 +711,10 @@ window.__CHENGDU_HOTELS__ = [
       "Chaotianmen"
     ],
     "nearby_restaurants": [
-      "River-view hotpot spots in Jiangbei",
-      "IFS dining floors",
-      "Night markets near Grand Theater station"
+      "Guanyinqiao Food Street (Jiangbei)",
+      "Beicang Cultural District cafe row",
+      "Qin Yun Lao Hotpot (Jiangbei branch)",
+      "Raffles City Chaotianmen dining terraces"
     ],
     "room_rates_may_11_15_2026": {
       "currency": "USD",
@@ -764,6 +768,7 @@ window.__CHENGDU_HOTELS__ = [
   }
 ]
 ;
+
 window.__CHENGDU_RESTAURANTS__ = [
   {
     "name": "Ma's Kitchen",
@@ -867,12 +872,17 @@ window.__CHENGDU_RESTAURANTS__ = [
   }
 ]
 ;
+
 window.__CHENGDU_SHOPPING__ = [
   {
     "name": "Taikoo Li Chengdu",
     "district": "Jinjiang",
     "type": "Lifestyle luxury complex",
-    "what_to_buy": ["Designer fashion", "Premium cosmetics", "Concept lifestyle items"],
+    "what_to_buy": [
+      "Designer fashion",
+      "Premium cosmetics",
+      "Concept lifestyle items"
+    ],
     "price_level": "luxury",
     "nearest_metro": "Chunxi Road Station",
     "notes": "Best for premium brands and polished evening dining in one area."
@@ -881,7 +891,11 @@ window.__CHENGDU_SHOPPING__ = [
     "name": "Chengdu IFS",
     "district": "Jinjiang",
     "type": "Luxury mall",
-    "what_to_buy": ["Luxury leather goods", "Watch boutiques", "Sneaker drops"],
+    "what_to_buy": [
+      "Luxury leather goods",
+      "Watch boutiques",
+      "Sneaker drops"
+    ],
     "price_level": "luxury",
     "nearest_metro": "Chunxi Road Station",
     "notes": "Pair with Taikoo Li for a full upscale shopping day."
@@ -890,7 +904,11 @@ window.__CHENGDU_SHOPPING__ = [
     "name": "Chunxi Road Pedestrian Street",
     "district": "Jinjiang",
     "type": "Street retail",
-    "what_to_buy": ["Mid-range fashion", "Sportswear", "Gift snacks"],
+    "what_to_buy": [
+      "Mid-range fashion",
+      "Sportswear",
+      "Gift snacks"
+    ],
     "price_level": "mid",
     "nearest_metro": "Chunxi Road Station",
     "notes": "Good for broad brand variety and practical souvenirs."
@@ -899,7 +917,11 @@ window.__CHENGDU_SHOPPING__ = [
     "name": "Kuanzhai Alley",
     "district": "Qingyang",
     "type": "Historic retail lane",
-    "what_to_buy": ["Tea sets", "Handcrafted fans", "Local craft souvenirs"],
+    "what_to_buy": [
+      "Tea sets",
+      "Handcrafted fans",
+      "Local craft souvenirs"
+    ],
     "price_level": "mid",
     "nearest_metro": "Kuanzhaixiangzi Alley Station",
     "notes": "Touristy pricing in peak hours; negotiate in independent shops."
@@ -908,7 +930,11 @@ window.__CHENGDU_SHOPPING__ = [
     "name": "Yulin & Tongzilin Boutique Strip",
     "district": "Wuhou",
     "type": "Neighborhood boutiques",
-    "what_to_buy": ["Independent fashion", "Home design items", "Cafe goods"],
+    "what_to_buy": [
+      "Independent fashion",
+      "Home design items",
+      "Cafe goods"
+    ],
     "price_level": "mid",
     "nearest_metro": "Tongzilin Station",
     "notes": "Best for travelers who prefer local style over mall shopping."
@@ -917,7 +943,11 @@ window.__CHENGDU_SHOPPING__ = [
     "name": "Hongyadong Commercial Cluster",
     "district": "Yuzhong (Chongqing)",
     "type": "Tourism retail cluster",
-    "what_to_buy": ["Chili sauces", "Hotpot base packs", "Photo-friendly souvenirs"],
+    "what_to_buy": [
+      "Chili sauces",
+      "Hotpot base packs",
+      "Photo-friendly souvenirs"
+    ],
     "price_level": "budget",
     "nearest_metro": "Xiaoshizi Station",
     "notes": "Ideal during Chongqing overnight stop; crowded after dusk."
@@ -926,13 +956,18 @@ window.__CHENGDU_SHOPPING__ = [
     "name": "Jiefangbei Pedestrian Core",
     "district": "Yuzhong (Chongqing)",
     "type": "Urban retail district",
-    "what_to_buy": ["Street fashion", "Tech accessories", "Travel essentials"],
+    "what_to_buy": [
+      "Street fashion",
+      "Tech accessories",
+      "Travel essentials"
+    ],
     "price_level": "mid",
     "nearest_metro": "Jiaochangkou Station",
     "notes": "Practical for late check-in travelers needing quick purchases."
   }
 ]
 ;
+
 window.__CHENGDU_TRANSIT__ = [
   {
     "route_name": "CTU to Jinjiang hotels",
@@ -999,6 +1034,7 @@ window.__CHENGDU_TRANSIT__ = [
   }
 ]
 ;
+
 window.__CHONGQING_24H__ = [
   {
     "time_block": "Arrival Evening (17:00-19:00)",

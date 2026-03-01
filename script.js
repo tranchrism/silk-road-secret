@@ -1,4 +1,5 @@
 const districtOrder = ["Jinjiang", "Wuhou", "Chongqing Overnight"];
+const DATA_VERSION = "20260301d";
 
 const state = {
   activeDistrict: "Jinjiang",
@@ -418,11 +419,11 @@ async function loadData() {
 
   try {
     const [hotelsResponse, restaurantsResponse, shoppingResponse, transitResponse, cqResponse] = await Promise.all([
-      fetch("data/hotels.json"),
-      fetch("data/restaurants.json"),
-      fetch("data/shopping.json"),
-      fetch("data/transit.json"),
-      fetch("data/chongqing_24h.json")
+      fetch(`data/hotels.json?v=${DATA_VERSION}`),
+      fetch(`data/restaurants.json?v=${DATA_VERSION}`),
+      fetch(`data/shopping.json?v=${DATA_VERSION}`),
+      fetch(`data/transit.json?v=${DATA_VERSION}`),
+      fetch(`data/chongqing_24h.json?v=${DATA_VERSION}`)
     ]);
 
     if (hotelsResponse.ok && restaurantsResponse.ok && shoppingResponse.ok && transitResponse.ok && cqResponse.ok) {
