@@ -30,10 +30,25 @@ function normalizeSource(path) {
   if (/^https?:\/\//i.test(path) || path.startsWith("data:")) {
     return path;
   }
-  if (path.startsWith("./") || path.startsWith("../") || path.startsWith("/")) {
+  if (path.startsWith("/")) {
     return path;
   }
-  return `./${path}`;
+
+  const clean = path.replace(/^\.?\//, "");
+
+  // Ensure project-page local assets work with and without trailing slash.
+  if (window.location.hostname.endsWith("github.io")) {
+    const repoSegment = (window.location.pathname.split("/").filter(Boolean)[0] || "").trim();
+    if (repoSegment) {
+      return `/${repoSegment}/${clean}`;
+    }
+  }
+
+  if (window.location.protocol === "file:") {
+    return `./${clean}`;
+  }
+
+  return `./${clean}`;
 }
 
 function escapeHtml(text) {
