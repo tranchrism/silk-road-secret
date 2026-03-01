@@ -30,13 +30,15 @@
           "display_price": "$142/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible cancellation estimate derived from captured baseline rate."
+          "notes": "Flexible cancellation estimate derived from captured baseline rate.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$128/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Lower prepaid estimate from captured baseline rate."
+          "notes": "Lower prepaid estimate from captured baseline rate.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -44,16 +46,20 @@
           "display_price": "$158/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin or two-bed flexible estimate based on same capture window."
+          "notes": "Twin or two-bed flexible estimate based on same capture window.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$144/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin or two-bed prepaid estimate based on same capture window."
+          "notes": "Twin or two-bed prepaid estimate based on same capture window.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration."
+      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc3s12000f78kp5f6976_R_960_660_R5_D.jpg",
@@ -66,7 +72,11 @@
       "official": "https://www.marriott.com/en-us/hotels/ctujw-jw-marriott-hotel-chengdu/overview/",
       "booking": "https://us.trip.com/hotels/chengdu-hotel-detail-6050481/jw-marriott-hotel-chengdu/",
       "map": "https://maps.google.com/?q=JW+Marriott+Hotel+Chengdu"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://us.trip.com/hotels/chengdu-hotel-detail-6050481/jw-marriott-hotel-chengdu/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "grand-hyatt-chengdu",
@@ -99,13 +109,15 @@
           "display_price": "$144/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible estimate from captured nightly baseline."
+          "notes": "Flexible estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$130/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Prepaid estimate from captured nightly baseline."
+          "notes": "Prepaid estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -113,16 +125,20 @@
           "display_price": "$160/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin estimate from same source/date capture."
+          "notes": "Twin estimate from same source/date capture.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$146/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin prepaid estimate from same source/date capture."
+          "notes": "Twin prepaid estimate from same source/date capture.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration."
+      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc6p12000g9zvp4uF640_R_960_660_R5_D.jpg",
@@ -135,7 +151,11 @@
       "official": "https://www.hyatt.com/grand-hyatt/en-US/ctugh-grand-hyatt-chengdu",
       "booking": "https://us.trip.com/hotels/chengdu-hotel-detail-5236887/grand-hyatt-chengdu/",
       "map": "https://maps.google.com/?q=Grand+Hyatt+Chengdu"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://us.trip.com/hotels/chengdu-hotel-detail-5236887/grand-hyatt-chengdu/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "niccolo-chengdu",
@@ -168,13 +188,15 @@
           "display_price": "$196/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible estimate from captured nightly baseline."
+          "notes": "Flexible estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$175/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Prepaid estimate from captured nightly baseline."
+          "notes": "Prepaid estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -182,16 +204,20 @@
           "display_price": "$219/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin estimate from same source/date capture."
+          "notes": "Twin estimate from same source/date capture.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$196/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin prepaid estimate from same source/date capture."
+          "notes": "Twin prepaid estimate from same source/date capture.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration."
+      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc1e12000hek60deC8FF_R_960_660_R5_D.jpg",
@@ -204,7 +230,11 @@
       "official": "https://www.niccolohotels.com/en/hotels/chengdu",
       "booking": "https://us.trip.com/hotels/chengdu-hotel-detail-436708/niccolo-chengdu/",
       "map": "https://maps.google.com/?q=Niccolo+Chengdu"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://us.trip.com/hotels/chengdu-hotel-detail-436708/niccolo-chengdu/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "temple-house-chengdu",
@@ -228,39 +258,53 @@
       "Dumpling & Drinks (Michelin Bib Gourmand)"
     ],
     "room_rates_may_11_15_2026": {
-      "currency": "AUD",
+      "currency": "USD",
       "captured_at": "2026-03-01",
       "source_name": "Trip.com",
       "source_url": "https://us.trip.com/hotels/chengdu-hotel-detail-436695/the-temple-house/",
       "one_bed": {
         "refundable": {
-          "display_price": "AU$620/night",
-          "basis": "nightly estimate",
+          "display_price": "$409/night",
+          "basis": "nightly estimate (USD display)",
           "availability": "available",
-          "notes": "Flexible estimate from captured nightly baseline."
+          "notes": "Converted from source AUD snapshot using dated FX reference.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
-          "display_price": "AU$553/night",
-          "basis": "nightly estimate",
+          "display_price": "$365/night",
+          "basis": "nightly estimate (USD display)",
           "availability": "available",
-          "notes": "Prepaid estimate from captured nightly baseline."
+          "notes": "Converted from source AUD snapshot using dated FX reference.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
         "refundable": {
-          "display_price": "AU$688/night",
-          "basis": "nightly estimate",
+          "display_price": "$454/night",
+          "basis": "nightly estimate (USD display)",
           "availability": "available",
-          "notes": "Twin estimate from same source/date capture."
+          "notes": "Converted from source AUD snapshot using dated FX reference.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
-          "display_price": "AU$620/night",
-          "basis": "nightly estimate",
+          "display_price": "$409/night",
+          "basis": "nightly estimate (USD display)",
           "availability": "available",
-          "notes": "Twin prepaid estimate from same source/date capture."
+          "notes": "Converted from source AUD snapshot using dated FX reference.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration."
+      "caveat": "May 11-15, 2026 rates are source snapshots. Temple House values are displayed in USD converted from source AUD and can shift with FX and inventory.",
+      "display_currency": "USD",
+      "rate_quality": "converted_from_source_currency",
+      "fx": {
+        "from_currency": "AUD",
+        "to_currency": "USD",
+        "rate": 0.66,
+        "rate_date": "2026-03-01",
+        "source_name": "ExchangeRate-API",
+        "source_url": "https://www.exchangerate-api.com/"
+      }
     },
     "images": {
       "exterior_url": "https://images.trvl-media.com/lodging/11000000/10920000/10912100/10912041/d1c10cd8.jpg?impolicy=resizecrop&ra=fit&rw=598",
@@ -275,7 +319,11 @@
       "official": "https://www.thehousecollective.com/en/the-temple-house/",
       "booking": "https://us.trip.com/hotels/chengdu-hotel-detail-436695/the-temple-house/",
       "map": "https://maps.google.com/?q=The+Temple+House+Chengdu"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://us.trip.com/hotels/chengdu-hotel-detail-436695/the-temple-house/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "langbo-chengdu",
@@ -308,13 +356,15 @@
           "display_price": "$133/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible estimate from captured nightly baseline."
+          "notes": "Flexible estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$119/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Prepaid estimate from captured nightly baseline."
+          "notes": "Prepaid estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -322,16 +372,20 @@
           "display_price": "$148/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin estimate from same source/date capture."
+          "notes": "Twin estimate from same source/date capture.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$134/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin prepaid estimate from same source/date capture."
+          "notes": "Twin prepaid estimate from same source/date capture.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration."
+      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc5812000e40nsag1403_R_960_660_R5_D.jpg",
@@ -344,7 +398,11 @@
       "official": "https://www.hyatt.com/en-US/hotel/china/the-langbo-chengdu/ctuub",
       "booking": "https://us.trip.com/hotels/chengdu-hotel-detail-62975027/the-langbo-chengdu-in-the-unbound-collection-by-hyatt/",
       "map": "https://maps.google.com/?q=The+Langbo+Chengdu"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://us.trip.com/hotels/chengdu-hotel-detail-62975027/the-langbo-chengdu-in-the-unbound-collection-by-hyatt/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "ritz-carlton-chengdu",
@@ -377,13 +435,15 @@
           "display_price": "$148/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible estimate from captured nightly baseline."
+          "notes": "Flexible estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$132/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Prepaid estimate from captured nightly baseline."
+          "notes": "Prepaid estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -391,16 +451,20 @@
           "display_price": "$165/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin estimate from same source/date capture."
+          "notes": "Twin estimate from same source/date capture.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$149/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin prepaid estimate from same source/date capture."
+          "notes": "Twin prepaid estimate from same source/date capture.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration."
+      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://ak-d.tripcdn.com/images/1mc0f12000i0ch4gn6289_R_960_660_R5_D.jpg",
@@ -413,7 +477,11 @@
       "official": "https://www.ritzcarlton.com/en/hotels/china/chengdu/overview/",
       "booking": "https://us.trip.com/hotels/chengdu-hotel-detail-437026/the-ritz-carlton-chengdu/",
       "map": "https://maps.google.com/?q=The+Ritz-Carlton+Chengdu"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://us.trip.com/hotels/chengdu-hotel-detail-437026/the-ritz-carlton-chengdu/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "st-regis-chengdu",
@@ -446,13 +514,15 @@
           "display_price": "$148/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible estimate from captured nightly baseline."
+          "notes": "Flexible estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$132/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Prepaid estimate from captured nightly baseline."
+          "notes": "Prepaid estimate from captured nightly baseline.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -460,16 +530,20 @@
           "display_price": "$165/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin estimate from same source/date capture."
+          "notes": "Twin estimate from same source/date capture.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$149/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin prepaid estimate from same source/date capture."
+          "notes": "Twin prepaid estimate from same source/date capture.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration."
+      "caveat": "May 11-15, 2026 rates are snapshot-based estimates and can change by inventory, cancellation policy, and tax configuration.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://ak-d.tripcdn.com/images/0206o120008dtkvr6B267_R_960_660_R5_D.jpg",
@@ -482,7 +556,11 @@
       "official": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/overview/",
       "booking": "https://us.trip.com/hotels/chengdu-hotel-detail-1066373/the-st-regis-chengdu/",
       "map": "https://maps.google.com/?q=The+St.+Regis+Chengdu"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://us.trip.com/hotels/chengdu-hotel-detail-1066373/the-st-regis-chengdu/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "westin-chongqing-liberation-square",
@@ -516,13 +594,15 @@
           "display_price": "$157/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible estimate from captured $141 nightly baseline."
+          "notes": "Flexible estimate from captured $141 nightly baseline.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$141/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Prepaid estimate from captured baseline."
+          "notes": "Prepaid estimate from captured baseline.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -530,16 +610,20 @@
           "display_price": "$176/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin estimate based on captured room filters."
+          "notes": "Twin estimate based on captured room filters.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$159/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin prepaid estimate based on captured room filters."
+          "notes": "Twin prepaid estimate based on captured room filters.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 values are estimate projections from dated snapshots and room filter signals."
+      "caveat": "May 11-15, 2026 values are estimate projections from dated snapshots and room filter signals.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://images.trvl-media.com/lodging/9000000/8200000/8190900/8190896/4ca2d865.jpg?impolicy=resizecrop&ra=fit&rw=297",
@@ -552,7 +636,11 @@
       "official": "https://www.marriott.com/en-us/hotels/ckgwi-the-westin-chongqing-liberation-square/overview/",
       "booking": "https://www.hotels.com/ho462933/the-westin-chongqing-liberation-square-chongqing-china/",
       "map": "https://maps.google.com/?q=The+Westin+Chongqing+Liberation+Square"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://www.hotels.com/ho462933/the-westin-chongqing-liberation-square-chongqing-china/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "jw-marriott-chongqing",
@@ -586,13 +674,15 @@
           "display_price": "$110/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible estimate from captured $99 nightly baseline."
+          "notes": "Flexible estimate from captured $99 nightly baseline.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$99/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Prepaid estimate from captured baseline."
+          "notes": "Prepaid estimate from captured baseline.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -600,16 +690,20 @@
           "display_price": "$123/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin estimate based on captured 2-bed filter availability."
+          "notes": "Twin estimate based on captured 2-bed filter availability.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$111/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin prepaid estimate based on captured 2-bed filter availability."
+          "notes": "Twin prepaid estimate based on captured 2-bed filter availability.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 values are estimate projections from dated snapshots and room filter signals."
+      "caveat": "May 11-15, 2026 values are estimate projections from dated snapshots and room filter signals.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://images.trvl-media.com/lodging/2000000/1640000/1637000/1636908/c068528c.jpg?impolicy=resizecrop&ra=fit&rw=598",
@@ -622,7 +716,11 @@
       "official": "https://www.marriott.com/en-us/hotels/ckgjw-jw-marriott-hotel-chongqing/overview/",
       "booking": "https://www.hotels.com/ho483323/jw-marriott-hotel-chongqing-chongqing-china/",
       "map": "https://maps.google.com/?q=JW+Marriott+Hotel+Chongqing"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://www.hotels.com/ho483323/jw-marriott-hotel-chongqing-chongqing-china/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "hyatt-regency-metropolitan-chongqing",
@@ -656,13 +754,15 @@
           "display_price": "$87/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible estimate from captured $78 nightly baseline."
+          "notes": "Flexible estimate from captured $78 nightly baseline.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$78/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Prepaid estimate from captured baseline."
+          "notes": "Prepaid estimate from captured baseline.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -670,16 +770,20 @@
           "display_price": "$97/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin estimate based on captured 2-bed filter availability."
+          "notes": "Twin estimate based on captured 2-bed filter availability.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$88/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin prepaid estimate based on captured 2-bed filter availability."
+          "notes": "Twin prepaid estimate based on captured 2-bed filter availability.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 values are estimate projections from dated snapshots and room filter signals."
+      "caveat": "May 11-15, 2026 values are estimate projections from dated snapshots and room filter signals.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://images.trvl-media.com/lodging/1000000/120000/114900/114895/2ced0bed.jpg?impolicy=resizecrop&ra=fit&rw=297",
@@ -692,7 +796,11 @@
       "official": "https://www.hyatt.com/hyatt-regency/en-US/ckgro-hyatt-regency-metropolitan-chongqing",
       "booking": "https://www.hotels.com/ho143938/hyatt-regency-liberation-square-chongqing-chongqing-china/",
       "map": "https://maps.google.com/?q=Hyatt+Regency+Metropolitan+Chongqing"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://www.hotels.com/ho143938/hyatt-regency-liberation-square-chongqing-chongqing-china/",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   },
   {
     "id": "niccolo-chongqing",
@@ -726,13 +834,15 @@
           "display_price": "$204/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Flexible estimate from KAYAK average weeknight data ($184)."
+          "notes": "Flexible estimate from KAYAK average weeknight data ($184).",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$184/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Prepaid estimate from KAYAK average weeknight data."
+          "notes": "Prepaid estimate from KAYAK average weeknight data.",
+          "verification_status": "estimated"
         }
       },
       "two_bed": {
@@ -740,16 +850,20 @@
           "display_price": "$228/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin estimate based on captured market averages and two-bed inventory cues."
+          "notes": "Twin estimate based on captured market averages and two-bed inventory cues.",
+          "verification_status": "estimated"
         },
         "non_refundable": {
           "display_price": "$205/night",
           "basis": "nightly estimate",
           "availability": "available",
-          "notes": "Twin prepaid estimate based on captured market averages and two-bed inventory cues."
+          "notes": "Twin prepaid estimate based on captured market averages and two-bed inventory cues.",
+          "verification_status": "estimated"
         }
       },
-      "caveat": "May 11-15, 2026 values are estimate projections from dated market averages and inventory cues."
+      "caveat": "May 11-15, 2026 values are estimate projections from dated market averages and inventory cues.",
+      "display_currency": "USD",
+      "rate_quality": "estimated"
     },
     "images": {
       "exterior_url": "https://images.trvl-media.com/lodging/23000000/22400000/22397700/22397671/e7a914fb.jpg?impolicy=resizecrop&ra=fit&rw=598",
@@ -764,6 +878,10 @@
       "official": "https://www.niccolohotels.com/en/niccolo-chongqing",
       "booking": "https://www.hotels.com/ho717725472/niccolo-chongqing-chongqing-china/",
       "map": "https://maps.google.com/?q=Niccolo+Chongqing"
-    }
+    },
+    "verification_status": "estimated",
+    "captured_at": "2026-03-01",
+    "source_url": "https://www.kayak.com/Chongqing-Hotels-Niccolo-Chongqing.3382979.ksp",
+    "verification_note": "Snapshot market pricing with source attribution; may vary by inventory and policy."
   }
 ]

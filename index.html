@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260301e" />
+    <link rel="stylesheet" href="styles.css?v=20260301f" />
   </head>
   <body>
     <header class="hero" id="top">
@@ -15,22 +15,32 @@
         <div class="brand">Silk Road Secret</div>
         <div class="nav-links">
           <a href="#districts">Hotels</a>
-          <a href="#itinerary">Chengdu Itinerary</a>
-          <a href="#restaurants">Michelin Restaurants</a>
+          <a href="#itinerary">Itinerary</a>
+          <a href="#restaurants">Restaurants</a>
+          <a href="#china-tips">China Tips</a>
           <a href="#shopping">Shopping</a>
-          <a href="#transit">Transit Tips</a>
+          <a href="#transit">Transit</a>
+          <a href="#silk-snake">Silk Snake</a>
+          <a href="#data-trust">Data Trust</a>
           <button id="printBtn" class="print-btn" type="button">Print / Save PDF</button>
         </div>
       </nav>
 
-      <div class="hero-copy">
-        <p class="eyebrow">Travel Adventure Dossier</p>
-        <h1>Andreas &amp; Chris and the Silk Road Secret</h1>
-        <p>
-          Lantern-lit luxury hotels, spicy food quests, and one-night Chongqing detours.
-          Explore district-based Chengdu options with room-type pricing matrixes and practical planning details for
-          <strong>May 11-15, 2026</strong>.
-        </p>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Travel Adventure Dossier</p>
+          <h1>Andreas &amp; Chris and the Silk Road Secret</h1>
+          <p>
+            Lantern-lit luxury hotels, spice-hunting food quests, and one-night Chongqing detours.
+            This guide uses visible trust labels so you can quickly see what is verified, estimated,
+            or curated for planning.
+          </p>
+        </div>
+
+        <figure class="hero-mascot-frame">
+          <img src="assets/mascot/silk-road-duo.svg" alt="Comical Silk Road duo mascot featuring two travelers in Tang-style outfits" />
+          <figcaption>Silk Road Duo: plaid mullet strategist + bald hotpot navigator.</figcaption>
+        </figure>
       </div>
     </header>
 
@@ -38,7 +48,7 @@
       <section id="districts" class="section districts">
         <div class="section-head">
           <h2>Hotel Explorer</h2>
-          <p>Switch tabs by destination section and expand each hotel for links and planning notes.</p>
+          <p>Switch tabs by destination section and expand each hotel for links, trust labels, and planning notes.</p>
         </div>
 
         <div class="tabs" role="tablist" aria-label="Hotel section tabs">
@@ -70,7 +80,7 @@
             <tbody>
               <tr>
                 <td>Day 1</td>
-                <td>Tianfu Square and Sichuan Science & Technology Museum exterior walk</td>
+                <td>Tianfu Square and Sichuan Science &amp; Technology Museum exterior walk</td>
                 <td>People's Park tea house session, then Kuanzhai Alley</td>
                 <td>Lan Kwai Fong riverfront or Taikoo Li stroll</td>
                 <td>Classic Sichuan dishes near Chunxi Road and Jinjiang</td>
@@ -104,7 +114,7 @@
       <section id="restaurants" class="section restaurants">
         <div class="section-head">
           <h2 id="restaurantsHeading">Michelin Guide Restaurant Picks</h2>
-          <p id="restaurantsSubhead">Includes cuisine, district, Michelin status, and practical budget guidance.</p>
+          <p id="restaurantsSubhead">Includes cuisine, district, Michelin status, trust label, and budget guidance.</p>
         </div>
 
         <div class="table-wrap">
@@ -114,14 +124,23 @@
                 <th>Restaurant Name</th>
                 <th>Cuisine</th>
                 <th>Location / District</th>
-                <th>Michelin Designation</th>
+                <th>Designation</th>
                 <th>Price Band</th>
                 <th>Estimated Per Person</th>
+                <th>Trust</th>
               </tr>
             </thead>
             <tbody></tbody>
           </table>
         </div>
+      </section>
+
+      <section id="china-tips" class="section china-tips">
+        <div class="section-head">
+          <h2>China Tips for US Travelers</h2>
+          <p>Deep handbook: apps, payments, connectivity, etiquette, transport, and emergency readiness.</p>
+        </div>
+        <div id="chinaTipsGroups" class="tips-groups"></div>
       </section>
 
       <section id="shopping" class="section shopping">
@@ -140,6 +159,7 @@
                 <th>What to Buy</th>
                 <th>Price Level</th>
                 <th>Nearest Metro</th>
+                <th>Trust</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -164,6 +184,7 @@
                 <th>Typical Time</th>
                 <th>Typical Cost</th>
                 <th>Notes</th>
+                <th>Trust</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -171,13 +192,56 @@
         </div>
       </section>
 
-      <section class="section notes">
-        <h2>Pricing Method and Notes</h2>
-        <ul>
-          <li>Rates are shown for May 11-15, 2026 as a room-type matrix (one bed / two beds, refundable / non-refundable).</li>
-          <li>Each hotel matrix includes source URL and capture date. Estimate math is labeled explicitly where direct room-policy pricing was not fully crawlable.</li>
-          <li>If a source image fails, the page attempts a fallback image and then shows an "Image unavailable" placeholder.</li>
-        </ul>
+      <section id="silk-snake" class="section silk-snake">
+        <div class="section-head">
+          <h2>Silk Snake Mini-Game</h2>
+          <p>Play with keyboard (arrow keys/WASD) or touch controls on mobile.</p>
+        </div>
+
+        <div class="snake-wrap">
+          <canvas id="snakeCanvas" width="360" height="360" aria-label="Silk Snake game board"></canvas>
+          <div class="snake-ui">
+            <div class="snake-score">
+              <span>Score: <strong id="snakeScore">0</strong></span>
+              <span>High Score: <strong id="snakeHighScore">0</strong></span>
+            </div>
+            <div class="snake-buttons">
+              <button id="snakeStartBtn" type="button">Start</button>
+              <button id="snakePauseBtn" type="button">Pause</button>
+              <button id="snakeRestartBtn" type="button">Restart</button>
+            </div>
+            <div class="dpad" aria-label="Touch controls">
+              <button class="dpad-btn" data-dir="up" aria-label="Move up">▲</button>
+              <div class="dpad-mid">
+                <button class="dpad-btn" data-dir="left" aria-label="Move left">◀</button>
+                <button class="dpad-btn" data-dir="right" aria-label="Move right">▶</button>
+              </div>
+              <button class="dpad-btn" data-dir="down" aria-label="Move down">▼</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="data-trust" class="section data-trust">
+        <div class="section-head">
+          <h2>Data Trust and Sourcing</h2>
+          <p>Every planning record is explicitly tagged so you can separate verified facts from estimates.</p>
+        </div>
+        <div class="trust-grid">
+          <article>
+            <h3><span class="trust-chip verified">Verified</span></h3>
+            <p>Directly sourced from official/provider pages with capture date and URL.</p>
+          </article>
+          <article>
+            <h3><span class="trust-chip estimated">Estimated</span></h3>
+            <p>Snapshot- or market-based values that can move with inventory, policy, tax, or FX changes.</p>
+          </article>
+          <article>
+            <h3><span class="trust-chip inferred">Inferred</span></h3>
+            <p>Curated guidance assembled for planning flow; treat as advisory and confirm before departure.</p>
+          </article>
+        </div>
+        <p class="validation-note">Validation script: <code>bash scripts/validate-data-trust.sh</code></p>
       </section>
     </main>
 
@@ -185,7 +249,7 @@
       <a href="#top">Back to top</a>
     </footer>
 
-    <script src="data/data-inline.js?v=20260301e"></script>
-    <script src="script.js?v=20260301e"></script>
+    <script src="data/data-inline.js?v=20260301f"></script>
+    <script src="script.js?v=20260301f"></script>
   </body>
 </html>

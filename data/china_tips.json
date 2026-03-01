@@ -1,0 +1,212 @@
+[
+  {
+    "category": "apps",
+    "title": "Install Alipay and complete real-name verification",
+    "description": "Alipay is essential for QR payments at shops, taxis, and attractions.",
+    "steps": [
+      "Download Alipay before departure and switch language to English in settings.",
+      "Add at least one Visa or Mastercard and complete identity verification.",
+      "Test a small payment when you arrive to confirm card binding works."
+    ],
+    "source_url": "https://www.alipay.com/",
+    "captured_at": "2026-03-01",
+    "verification_status": "verified",
+    "verification_note": "App availability and setup flow based on official Alipay resources."
+  },
+  {
+    "category": "apps",
+    "title": "Set up WeChat for messaging and backup payments",
+    "description": "Many services communicate through WeChat, and some merchants prefer WeChat Pay.",
+    "steps": [
+      "Create or recover your account before departure.",
+      "Enable payment options if available in your region.",
+      "Save key hotel and guide contacts in WeChat for easy access."
+    ],
+    "source_url": "https://www.wechat.com/",
+    "captured_at": "2026-03-01",
+    "verification_status": "estimated",
+    "verification_note": "Feature availability varies by account region and bank support."
+  },
+  {
+    "category": "apps",
+    "title": "Use Amap (Gaode Maps) for most in-China navigation",
+    "description": "Amap is usually more reliable than global map apps for local transit and addresses.",
+    "steps": [
+      "Download Amap before departure.",
+      "Save hotel names in Chinese and pin railway stations you will use.",
+      "Use metro routing mode to avoid peak-hour car congestion."
+    ],
+    "source_url": "https://www.amap.com/",
+    "captured_at": "2026-03-01",
+    "verification_status": "verified",
+    "verification_note": "Amap functionality confirmed through official product site and typical traveler usage."
+  },
+  {
+    "category": "apps",
+    "title": "Use Dianping for restaurant discovery and wait times",
+    "description": "Dianping helps with local restaurant rankings, photos, and peak-hour line expectations.",
+    "steps": [
+      "Download Dianping and enable location.",
+      "Translate restaurant names to Chinese for easier map matching.",
+      "Check recency of reviews before committing to a venue."
+    ],
+    "source_url": "https://www.dianping.com/",
+    "captured_at": "2026-03-01",
+    "verification_status": "verified",
+    "verification_note": "Dianping is a primary local dining discovery platform."
+  },
+  {
+    "category": "apps",
+    "title": "Add Didi for ride-hailing backup",
+    "description": "Useful when metro is inconvenient or for airport/rail transfers with luggage.",
+    "steps": [
+      "Install Didi and add international card options where supported.",
+      "Save your hotel names in both English and Chinese.",
+      "Confirm pickup points in large rail stations to avoid confusion."
+    ],
+    "source_url": "https://www.didiglobal.com/",
+    "captured_at": "2026-03-01",
+    "verification_status": "estimated",
+    "verification_note": "Payment compatibility can differ by country-issued cards."
+  },
+  {
+    "category": "payments",
+    "title": "Carry two payment methods (digital + card + small cash)",
+    "description": "Digital wallets dominate, but backup card/cash helps when terminals or account links fail.",
+    "steps": [
+      "Keep one backup Visa or Mastercard separate from your primary card.",
+      "Carry small RMB notes for edge cases and markets.",
+      "Enable travel notices or app alerts for anti-fraud blocks."
+    ],
+    "source_url": "https://travel.state.gov/",
+    "captured_at": "2026-03-01",
+    "verification_status": "estimated",
+    "verification_note": "Best-practice travel risk management guidance."
+  },
+  {
+    "category": "connectivity_vpn",
+    "title": "Set up eSIM or roaming before arrival",
+    "description": "Activation is easier before travel and avoids airport setup friction.",
+    "steps": [
+      "Install and activate your eSIM before flight departure.",
+      "Save QR and activation instructions offline.",
+      "Keep one secondary connectivity option for redundancy."
+    ],
+    "source_url": "https://www.gsma.com/esim/",
+    "captured_at": "2026-03-01",
+    "verification_status": "estimated",
+    "verification_note": "Carrier compatibility and performance vary by plan and device."
+  },
+  {
+    "category": "connectivity_vpn",
+    "title": "Understand internet restrictions and app availability",
+    "description": "Some common US services may not be available without alternatives.",
+    "steps": [
+      "Prepare local alternatives for maps, translation, and communications.",
+      "Download any work-critical files before travel.",
+      "Confirm your company policy before using any VPN service."
+    ],
+    "source_url": "https://www.state.gov/",
+    "captured_at": "2026-03-01",
+    "verification_status": "estimated",
+    "verification_note": "Policies and technical behavior can change; verify close to departure."
+  },
+  {
+    "category": "transport",
+    "title": "Use 12306 or Trip.com for high-speed rail tickets",
+    "description": "Rail is often the fastest intercity option (e.g., Chengdu to Chongqing).",
+    "steps": [
+      "Create account and verify passport details before travel.",
+      "Book priority trains 1-2 weeks early in peak seasons.",
+      "Arrive 45-60 minutes early for security and gate procedures."
+    ],
+    "source_url": "https://www.12306.cn/",
+    "captured_at": "2026-03-01",
+    "verification_status": "verified",
+    "verification_note": "12306 is the official rail booking platform."
+  },
+  {
+    "category": "transport",
+    "title": "Plan airport and rail transfer buffers",
+    "description": "Urban congestion and station size can cause delays if transfers are too tight.",
+    "steps": [
+      "Add 60-90 minute transfer buffers in major cities.",
+      "Use metro during peak traffic windows when practical.",
+      "Keep hotel name cards in Chinese for drivers and station staff."
+    ],
+    "source_url": "https://www.chinadiscovery.com/transport/",
+    "captured_at": "2026-03-01",
+    "verification_status": "estimated",
+    "verification_note": "Timing ranges are practical planning guidance."
+  },
+  {
+    "category": "food_booking",
+    "title": "Reserve high-demand meals and carry Chinese venue names",
+    "description": "Popular restaurants can have long queues and name translation issues.",
+    "steps": [
+      "Book in advance where possible via concierge or phone.",
+      "Save venue names in Chinese text and screenshot directions.",
+      "Check opening days and lunch/dinner service windows."
+    ],
+    "source_url": "https://guide.michelin.com/",
+    "captured_at": "2026-03-01",
+    "verification_status": "estimated",
+    "verification_note": "Operational details vary by restaurant and season."
+  },
+  {
+    "category": "culture_etiquette",
+    "title": "Use respectful dining and temple etiquette",
+    "description": "Small etiquette signals improve interactions and avoid awkward moments.",
+    "steps": [
+      "Avoid placing chopsticks upright in rice bowls.",
+      "Use indoor voice levels in tea houses and temples.",
+      "Ask before photographing people in intimate settings."
+    ],
+    "source_url": "https://www.chinahighlights.com/travelguide/china-etiquette.htm",
+    "captured_at": "2026-03-01",
+    "verification_status": "estimated",
+    "verification_note": "Etiquette is regionally nuanced; guidance is general-purpose."
+  },
+  {
+    "category": "safety_emergency",
+    "title": "Save emergency contacts and embassy details offline",
+    "description": "Offline access is crucial if connectivity degrades.",
+    "steps": [
+      "Store local emergency numbers and your hotel front desk number.",
+      "Save the nearest US embassy/consulate contacts.",
+      "Keep passport photo page and visa docs in secure offline storage."
+    ],
+    "source_url": "https://china.usembassy-china.org.cn/u-s-citizen-services/",
+    "captured_at": "2026-03-01",
+    "verification_status": "verified",
+    "verification_note": "US citizen services guidance sourced from US Embassy resources."
+  },
+  {
+    "category": "safety_emergency",
+    "title": "Use travel insurance that includes medical and interruption",
+    "description": "Coverage is valuable for medical events and schedule disruptions.",
+    "steps": [
+      "Confirm policy includes emergency evacuation and trip interruption.",
+      "Keep insurer hotlines and policy numbers in cloud + offline notes.",
+      "Understand pre-authorization requirements before you need care."
+    ],
+    "source_url": "https://travel.state.gov/content/travel/en/international-travel/before-you-go/your-health-abroad.html",
+    "captured_at": "2026-03-01",
+    "verification_status": "verified",
+    "verification_note": "Aligned with official US travel health risk guidance."
+  },
+  {
+    "category": "first_48_hours",
+    "title": "First 48 hours checklist",
+    "description": "A practical startup sequence to reduce friction after landing.",
+    "steps": [
+      "Activate data, test Alipay/WeChat payment, and pin hotel in Amap.",
+      "Withdraw small RMB backup cash and confirm onward rail tickets.",
+      "Run one trial metro ride and one ride-hail to verify app setup."
+    ],
+    "source_url": "https://www.trip.com/guide/",
+    "captured_at": "2026-03-01",
+    "verification_status": "estimated",
+    "verification_note": "Operational checklist assembled from standard traveler workflows."
+  }
+]

@@ -6,7 +6,11 @@
     "mode": "Airport express + Metro",
     "typical_time": "60-85 min",
     "typical_cost": "RMB 25-45",
-    "notes": "Reliable and cost-effective; add extra time after 6 PM."
+    "notes": "Reliable and cost-effective; add extra time after 6 PM.",
+    "captured_at": "2026-03-01",
+    "source_url": "https://www.travelchinaguide.com/cityguides/chongqing/transportation/metro.htm",
+    "verification_status": "estimated",
+    "verification_note": "Typical ranges are planning estimates; verify real-time conditions before departure."
   },
   {
     "route_name": "CTU to Wuhou hotels",
@@ -15,7 +19,11 @@
     "mode": "Taxi / ride-hail",
     "typical_time": "45-75 min",
     "typical_cost": "RMB 170-260",
-    "notes": "Faster with luggage; tolls may be added."
+    "notes": "Faster with luggage; tolls may be added.",
+    "captured_at": "2026-03-01",
+    "source_url": "https://maps.google.com/?q=Chengdu+Tianfu+International+Airport+(TFU)+to+Wuhou+hotels",
+    "verification_status": "estimated",
+    "verification_note": "Typical ranges are planning estimates; verify real-time conditions before departure."
   },
   {
     "route_name": "Jinjiang to Wuhou",
@@ -24,7 +32,11 @@
     "mode": "Metro",
     "typical_time": "20-35 min",
     "typical_cost": "RMB 3-6",
-    "notes": "Most efficient during evening peak traffic."
+    "notes": "Most efficient during evening peak traffic.",
+    "captured_at": "2026-03-01",
+    "source_url": "https://www.travelchinaguide.com/cityguides/chongqing/transportation/metro.htm",
+    "verification_status": "estimated",
+    "verification_note": "Typical ranges are planning estimates; verify real-time conditions before departure."
   },
   {
     "route_name": "City center to Panda Base",
@@ -33,7 +45,11 @@
     "mode": "Taxi / ride-hail",
     "typical_time": "35-55 min",
     "typical_cost": "RMB 55-100",
-    "notes": "Depart before 7:30 AM to avoid long entrance queues."
+    "notes": "Depart before 7:30 AM to avoid long entrance queues.",
+    "captured_at": "2026-03-01",
+    "source_url": "https://maps.google.com/?q=Jinjiang+/+Wuhou+hotels+to+Chengdu+Panda+Base",
+    "verification_status": "estimated",
+    "verification_note": "Typical ranges are planning estimates; verify real-time conditions before departure."
   },
   {
     "route_name": "Chengdu to Chongqing overnight",
@@ -42,7 +58,11 @@
     "mode": "High-speed rail",
     "typical_time": "62-95 min",
     "typical_cost": "RMB 154-280",
-    "notes": "Most practical way to add Chongqing as a one-night extension."
+    "notes": "Most practical way to add Chongqing as a one-night extension.",
+    "captured_at": "2026-03-01",
+    "source_url": "https://www.12306.cn/",
+    "verification_status": "estimated",
+    "verification_note": "Typical ranges are planning estimates; verify real-time conditions before departure."
   },
   {
     "route_name": "Chongqing station to Jiefangbei",
@@ -51,7 +71,11 @@
     "mode": "Metro + short walk",
     "typical_time": "35-50 min",
     "typical_cost": "RMB 5-8",
-    "notes": "Use metro at rush hour when roads are congested."
+    "notes": "Use metro at rush hour when roads are congested.",
+    "captured_at": "2026-03-01",
+    "source_url": "https://www.travelchinaguide.com/cityguides/chongqing/transportation/metro.htm",
+    "verification_status": "estimated",
+    "verification_note": "Typical ranges are planning estimates; verify real-time conditions before departure."
   },
   {
     "route_name": "CQ metro photo stop route",
@@ -60,6 +84,10 @@
     "mode": "Metro",
     "typical_time": "25-35 min",
     "typical_cost": "RMB 3-5",
-    "notes": "Best morning light for train-through-building photos."
+    "notes": "Best morning light for train-through-building photos.",
+    "captured_at": "2026-03-01",
+    "source_url": "https://www.travelchinaguide.com/cityguides/chongqing/transportation/metro.htm",
+    "verification_status": "estimated",
+    "verification_note": "Typical ranges are planning estimates; verify real-time conditions before departure."
   }
 ]
