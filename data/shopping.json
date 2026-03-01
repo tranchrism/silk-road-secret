@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Taikoo Li Chengdu",
+    "district": "Jinjiang",
+    "type": "Lifestyle luxury complex",
+    "what_to_buy": ["Designer fashion", "Premium cosmetics", "Concept lifestyle items"],
+    "price_level": "luxury",
+    "nearest_metro": "Chunxi Road Station",
+    "notes": "Best for premium brands and polished evening dining in one area."
+  },
+  {
+    "name": "Chengdu IFS",
+    "district": "Jinjiang",
+    "type": "Luxury mall",
+    "what_to_buy": ["Luxury leather goods", "Watch boutiques", "Sneaker drops"],
+    "price_level": "luxury",
+    "nearest_metro": "Chunxi Road Station",
+    "notes": "Pair with Taikoo Li for a full upscale shopping day."
+  },
+  {
+    "name": "Chunxi Road Pedestrian Street",
+    "district": "Jinjiang",
+    "type": "Street retail",
+    "what_to_buy": ["Mid-range fashion", "Sportswear", "Gift snacks"],
+    "price_level": "mid",
+    "nearest_metro": "Chunxi Road Station",
+    "notes": "Good for broad brand variety and practical souvenirs."
+  },
+  {
+    "name": "Kuanzhai Alley",
+    "district": "Qingyang",
+    "type": "Historic retail lane",
+    "what_to_buy": ["Tea sets", "Handcrafted fans", "Local craft souvenirs"],
+    "price_level": "mid",
+    "nearest_metro": "Kuanzhaixiangzi Alley Station",
+    "notes": "Touristy pricing in peak hours; negotiate in independent shops."
+  },
+  {
+    "name": "Yulin & Tongzilin Boutique Strip",
+    "district": "Wuhou",
+    "type": "Neighborhood boutiques",
+    "what_to_buy": ["Independent fashion", "Home design items", "Cafe goods"],
+    "price_level": "mid",
+    "nearest_metro": "Tongzilin Station",
+    "notes": "Best for travelers who prefer local style over mall shopping."
+  },
+  {
+    "name": "Hongyadong Commercial Cluster",
+    "district": "Yuzhong (Chongqing)",
+    "type": "Tourism retail cluster",
+    "what_to_buy": ["Chili sauces", "Hotpot base packs", "Photo-friendly souvenirs"],
+    "price_level": "budget",
+    "nearest_metro": "Xiaoshizi Station",
+    "notes": "Ideal during Chongqing overnight stop; crowded after dusk."
+  },
+  {
+    "name": "Jiefangbei Pedestrian Core",
+    "district": "Yuzhong (Chongqing)",
+    "type": "Urban retail district",
+    "what_to_buy": ["Street fashion", "Tech accessories", "Travel essentials"],
+    "price_level": "mid",
+    "nearest_metro": "Jiaochangkou Station",
+    "notes": "Practical for late check-in travelers needing quick purchases."
+  }
+]

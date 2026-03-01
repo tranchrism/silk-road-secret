@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andreas &amp; Chris and the Silk Road Secret | May 11-15, 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="top-nav">
+        <div class="brand">Silk Road Secret</div>
+        <div class="nav-links">
+          <a href="#districts">Hotels</a>
+          <a href="#itinerary">Chengdu Itinerary</a>
+          <a href="#restaurants">Michelin Restaurants</a>
+          <a href="#shopping">Shopping</a>
+          <a href="#transit">Transit Tips</a>
+          <button id="printBtn" class="print-btn" type="button">Print / Save PDF</button>
+        </div>
+      </nav>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Travel Adventure Dossier</p>
+        <h1>Andreas &amp; Chris and the Silk Road Secret</h1>
+        <p>
+          Lantern-lit luxury hotels, spicy food quests, and one-night Chongqing detours.
+          Explore district-based Chengdu options with room-type pricing matrixes and practical planning details for
+          <strong>May 11-15, 2026</strong>.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="districts" class="section districts">
+        <div class="section-head">
+          <h2>Hotel Explorer</h2>
+          <p>Switch tabs by destination section and expand each hotel for links and planning notes.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Hotel section tabs">
+          <button class="tab-btn active" data-district="Jinjiang" role="tab" aria-selected="true">Jinjiang</button>
+          <button class="tab-btn" data-district="Wuhou" role="tab" aria-selected="false">Wuhou</button>
+          <button class="tab-btn" data-district="Chongqing Overnight" role="tab" aria-selected="false">Chongqing Overnight</button>
+        </div>
+
+        <div id="districtPanels" class="district-panels"></div>
+      </section>
+
+      <section id="itinerary" class="section itinerary">
+        <div class="section-head">
+          <h2>4-Day Chengdu Itinerary</h2>
+          <p>Balanced plan across cultural highlights, pandas, day trips, and food neighborhoods.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+                <th>Evening</th>
+                <th>Food Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Day 1</td>
+                <td>Tianfu Square and Sichuan Science & Technology Museum exterior walk</td>
+                <td>People's Park tea house session, then Kuanzhai Alley</td>
+                <td>Lan Kwai Fong riverfront or Taikoo Li stroll</td>
+                <td>Classic Sichuan dishes near Chunxi Road and Jinjiang</td>
+              </tr>
+              <tr>
+                <td>Day 2</td>
+                <td>Chengdu Research Base of Giant Panda Breeding (early start)</td>
+                <td>Wuhou Shrine and Jinli Ancient Street</td>
+                <td>Sichuan Opera (face-changing show)</td>
+                <td>Snacks at Jinli plus an upscale dinner in Wuhou</td>
+              </tr>
+              <tr>
+                <td>Day 3</td>
+                <td>Leshan Giant Buddha day trip <em>or</em> Dujiangyan irrigation system</td>
+                <td>Qingcheng Mountain (if Dujiangyan route) or return to city spa break</td>
+                <td>Relaxed cocktail evening at hotel lounge</td>
+                <td>Regional hotpot or river fish specialties</td>
+              </tr>
+              <tr>
+                <td>Day 4</td>
+                <td>Contemporary art galleries and local design stores</td>
+                <td>Tea market, souvenir run, and flexible departure buffer</td>
+                <td>Farewell dinner around Taikoo Li or Tongzilin</td>
+                <td>Fine-dining reservation at a Michelin-listed venue</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="restaurants" class="section restaurants">
+        <div class="section-head">
+          <h2>Michelin Guide Restaurant Picks</h2>
+          <p>Includes cuisine, district, Michelin status, and practical budget guidance.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table id="restaurantTable">
+            <thead>
+              <tr>
+                <th>Restaurant Name</th>
+                <th>Cuisine</th>
+                <th>Location / District</th>
+                <th>Michelin Designation</th>
+                <th>Price Band</th>
+                <th>Estimated Per Person</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="shopping" class="section shopping">
+        <div class="section-head">
+          <h2>Shopping Guide</h2>
+          <p>Where to shop, what to buy, and expected spend level by district.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table id="shoppingTable">
+            <thead>
+              <tr>
+                <th>Area</th>
+                <th>District</th>
+                <th>Type</th>
+                <th>What to Buy</th>
+                <th>Price Level</th>
+                <th>Nearest Metro</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="transit" class="section transit">
+        <div class="section-head">
+          <h2>Transit Tips</h2>
+          <p>Quick transfer planning for Chengdu core routes and one-night Chongqing extension.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table id="transitTable">
+            <thead>
+              <tr>
+                <th>Route</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Mode</th>
+                <th>Typical Time</th>
+                <th>Typical Cost</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section notes">
+        <h2>Pricing Method and Notes</h2>
+        <ul>
+          <li>Rates are shown for May 11-15, 2026 as a room-type matrix (one bed / two beds, refundable / non-refundable).</li>
+          <li>Each hotel matrix includes source URL and capture date. Estimate math is labeled explicitly where direct room-policy pricing was not fully crawlable.</li>
+          <li>If a source image fails, the page attempts a fallback image and then shows an "Image unavailable" placeholder.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="data/data-inline.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

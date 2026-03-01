@@ -1,0 +1,30 @@
+[
+  {
+    "time_block": "Arrival Evening (17:00-19:00)",
+    "activity": "Check in near Jiefangbei and take a quick skyline walk",
+    "area": "Jiefangbei / Chaotianmen",
+    "food_tip": "Try small-plate Chongqing appetizers before hotpot.",
+    "notes": "Choose hotels with fast metro access if arriving by rail."
+  },
+  {
+    "time_block": "Night (19:00-22:00)",
+    "activity": "Explore Hongyadong and riverside night views",
+    "area": "Hongyadong",
+    "food_tip": "Book hotpot in advance for prime evening slots.",
+    "notes": "Ride-hail congestion is high after 8 PM; walking and metro are often faster."
+  },
+  {
+    "time_block": "Morning (07:30-10:30)",
+    "activity": "Liziba train-through-building photo stop + local breakfast",
+    "area": "Liziba / Eling",
+    "food_tip": "Local noodles or xiaomian is the fastest breakfast option.",
+    "notes": "Aim for early departure to avoid crowd bottlenecks."
+  },
+  {
+    "time_block": "Pre-Checkout (10:30-12:30)",
+    "activity": "Short market or mall stop before transfer",
+    "area": "Jiefangbei / IFS",
+    "food_tip": "Pick up hotpot base packs and chili snacks for gifts.",
+    "notes": "Leave 45-60 minutes buffer to station in peak traffic."
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "route_name": "CTU to Jinjiang hotels",
+    "from": "Chengdu Tianfu International Airport (TFU)",
+    "to": "Jinjiang central hotels",
+    "mode": "Airport express + Metro",
+    "typical_time": "60-85 min",
+    "typical_cost": "RMB 25-45",
+    "notes": "Reliable and cost-effective; add extra time after 6 PM."
+  },
+  {
+    "route_name": "CTU to Wuhou hotels",
+    "from": "Chengdu Tianfu International Airport (TFU)",
+    "to": "Wuhou hotels",
+    "mode": "Taxi / ride-hail",
+    "typical_time": "45-75 min",
+    "typical_cost": "RMB 170-260",
+    "notes": "Faster with luggage; tolls may be added."
+  },
+  {
+    "route_name": "Jinjiang to Wuhou",
+    "from": "Chunxi Road",
+    "to": "Wuhou Shrine / Tongzilin",
+    "mode": "Metro",
+    "typical_time": "20-35 min",
+    "typical_cost": "RMB 3-6",
+    "notes": "Most efficient during evening peak traffic."
+  },
+  {
+    "route_name": "City center to Panda Base",
+    "from": "Jinjiang / Wuhou hotels",
+    "to": "Chengdu Panda Base",
+    "mode": "Taxi / ride-hail",
+    "typical_time": "35-55 min",
+    "typical_cost": "RMB 55-100",
+    "notes": "Depart before 7:30 AM to avoid long entrance queues."
+  },
+  {
+    "route_name": "Chengdu to Chongqing overnight",
+    "from": "Chengdu East Railway Station",
+    "to": "Chongqing North / Shapingba",
+    "mode": "High-speed rail",
+    "typical_time": "62-95 min",
+    "typical_cost": "RMB 154-280",
+    "notes": "Most practical way to add Chongqing as a one-night extension."
+  },
+  {
+    "route_name": "Chongqing station to Jiefangbei",
+    "from": "Chongqing North Railway Station",
+    "to": "Jiefangbei / Yuzhong",
+    "mode": "Metro + short walk",
+    "typical_time": "35-50 min",
+    "typical_cost": "RMB 5-8",
+    "notes": "Use metro at rush hour when roads are congested."
+  },
+  {
+    "route_name": "CQ metro photo stop route",
+    "from": "Jiefangbei",
+    "to": "Liziba station",
+    "mode": "Metro",
+    "typical_time": "25-35 min",
+    "typical_cost": "RMB 3-5",
+    "notes": "Best morning light for train-through-building photos."
+  }
+]

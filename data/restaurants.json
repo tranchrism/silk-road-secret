@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Ma's Kitchen",
+    "cuisine": "Sichuan",
+    "district": "Jinjiang",
+    "address": "No. 3 Yandao Street, Jinjiang District, Chengdu",
+    "michelin_designation": "One Star",
+    "price_band": "$$$",
+    "estimated_per_person": "RMB 200-400",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/ma-s-kitchen"
+  },
+  {
+    "name": "Nian Feng Restaurant",
+    "cuisine": "Sichuan",
+    "district": "Jinjiang",
+    "address": "No. 5, Section 2, Linying Street, Jinjiang District, Chengdu",
+    "michelin_designation": "Bib Gourmand",
+    "price_band": "$$",
+    "estimated_per_person": "RMB 90-180",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/nian-feng-restaurant"
+  },
+  {
+    "name": "Chengdu Restaurant",
+    "cuisine": "Cantonese, Sichuan",
+    "district": "Wuhou",
+    "address": "No. 2 South Renmin Road, Wuhou District, Chengdu",
+    "michelin_designation": "MICHELIN Selected",
+    "price_band": "$$$",
+    "estimated_per_person": "RMB 180-320",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/chengdu-restaurant"
+  },
+  {
+    "name": "Nan's Gourmet",
+    "cuisine": "Cantonese",
+    "district": "Wuhou",
+    "address": "No. 1 South Renmin Road, Wuhou District, Chengdu",
+    "michelin_designation": "MICHELIN Selected",
+    "price_band": "$$$",
+    "estimated_per_person": "RMB 180-350",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/nan-s-gourmet"
+  },
+  {
+    "name": "Yongle Restaurant",
+    "cuisine": "Sichuan",
+    "district": "Wuhou",
+    "address": "No. 9 Yulin East Road, Wuhou District, Chengdu",
+    "michelin_designation": "Bib Gourmand",
+    "price_band": "$$",
+    "estimated_per_person": "RMB 80-160",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/yongle-restaurant"
+  },
+  {
+    "name": "Cuo Xia",
+    "cuisine": "Chao Zhou",
+    "district": "Wuhou",
+    "address": "No. 5, Section 2 Kehua North Road, Wuhou District, Chengdu",
+    "michelin_designation": "Bib Gourmand",
+    "price_band": "$$",
+    "estimated_per_person": "RMB 100-200",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/cuo-xia"
+  },
+  {
+    "name": "Datenbank",
+    "cuisine": "Innovative",
+    "district": "Wuhou",
+    "address": "No. 8 Tongzilin South Road, Wuhou District, Chengdu",
+    "michelin_designation": "MICHELIN Selected",
+    "price_band": "$$$",
+    "estimated_per_person": "RMB 220-420",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/datenbank"
+  },
+  {
+    "name": "Dumpling & Drinks (Lancao Road)",
+    "cuisine": "Dumplings",
+    "district": "Wuhou",
+    "address": "No. 18 Lancao Road, Wuhou District, Chengdu",
+    "michelin_designation": "Bib Gourmand",
+    "price_band": "$$",
+    "estimated_per_person": "RMB 70-140",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/dumpling-and-drinks-lancao-road"
+  },
+  {
+    "name": "Wanyan",
+    "cuisine": "Sichuan",
+    "district": "Wuhou",
+    "address": "No. 66 South Tianfu Avenue, Wuhou District, Chengdu",
+    "michelin_designation": "MICHELIN Selected",
+    "price_band": "$$$",
+    "estimated_per_person": "RMB 180-300",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/wanyan"
+  },
+  {
+    "name": "New Peking Cuisine",
+    "cuisine": "Beijing Cuisine",
+    "district": "Wuhou",
+    "address": "No. 188 South Kehua Road, Wuhou District, Chengdu",
+    "michelin_designation": "MICHELIN Selected",
+    "price_band": "$$$",
+    "estimated_per_person": "RMB 180-320",
+    "source_url": "https://guide.michelin.com/us/en/chengdu-municipality/chengdu/restaurant/new-peking-cuisine"
+  }
+]
