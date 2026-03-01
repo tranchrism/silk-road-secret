@@ -343,6 +343,10 @@ main {
   padding: 0.8rem;
 }
 
+.img-placeholder[hidden] {
+  display: none !important;
+}
+
 .images figcaption {
   margin-top: 0.3rem;
   font-size: 0.82rem;
