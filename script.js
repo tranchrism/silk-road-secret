@@ -125,7 +125,7 @@ function imageMarkup(hotel, kind, label) {
         alt="${escapeHtml(label)} at ${escapeHtml(hotel.name)}"
         loading="lazy"
       />
-      <div class="img-placeholder" hidden>Image unavailable at source.</div>
+      <div class="img-placeholder" hidden style="display:none;">Image unavailable at source.</div>
       <figcaption>${escapeHtml(label)}</figcaption>
     </figure>
   `;
@@ -252,6 +252,7 @@ function bindImageFallbacks(root = document) {
       const figure = img.closest("figure");
       const placeholder = figure?.querySelector(".img-placeholder");
       if (placeholder) {
+        placeholder.style.display = "grid";
         placeholder.hidden = false;
       }
       return;
@@ -261,6 +262,7 @@ function bindImageFallbacks(root = document) {
       const figure = img.closest("figure");
       const placeholder = figure?.querySelector(".img-placeholder");
       if (placeholder) {
+        placeholder.style.display = "none";
         placeholder.hidden = true;
       }
       img.hidden = false;
@@ -286,6 +288,7 @@ function bindImageFallbacks(root = document) {
       if (figure) {
         const placeholder = figure.querySelector(".img-placeholder");
         if (placeholder) {
+          placeholder.style.display = "grid";
           placeholder.hidden = false;
         }
       }
